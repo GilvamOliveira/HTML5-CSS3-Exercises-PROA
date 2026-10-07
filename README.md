@@ -6,7 +6,7 @@ Coleção progressiva de exercícios de front-end desenvolvida para praticar a e
 
 Todos os exercícios estão publicados via GitHub Pages e podem ser visualizados diretamente no navegador, sem necessidade de download:
 
-🔗 **[Acesse o projeto online](https://github.com/GilvamOliveira/HTML5-CSS3-Exercises-PROA)**
+🔗 **[Acesse o projeto online](https://gilvamoliveira.github.io/HTML5-CSS3-Exercises-PROA/)**
 
 ## Tecnologias
 
