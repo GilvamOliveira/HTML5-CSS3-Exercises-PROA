@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Use campos nativos de data, hora, data e hora local, mês e semana para coletar informações temporais.">
+    <meta name="keywords" content="HTML, input, date, time, datetime-local, month, week">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Inputs de data e horário</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 58</span>
+        <h1>Inputs de data e horário</h1>
+        <p>Os campos temporais exibem seletores nativos e retornam valores padronizados.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Agendamento</h2>
+        <form action="#" method="post" class="form-grid two-columns">
+            <div class="field">
+                <label for="data-evento">Data do evento — <code>date</code></label>
+                <input id="data-evento" name="data_evento" type="date">
+            </div>
+
+            <div class="field">
+                <label for="hora-evento">Horário — <code>time</code></label>
+                <input id="hora-evento" name="hora_evento" type="time">
+            </div>
+
+            <div class="field">
+                <label for="data-hora-evento">Data e hora — <code>datetime-local</code></label>
+                <input id="data-hora-evento" name="data_hora_evento" type="datetime-local">
+            </div>
+
+            <div class="field">
+                <label for="mes-evento">Mês de referência — <code>month</code></label>
+                <input id="mes-evento" name="mes_evento" type="month">
+            </div>
+
+            <div class="field">
+                <label for="semana-evento">Semana — <code>week</code></label>
+                <input id="semana-evento" name="semana_evento" type="week">
+            </div>
+
+            <div class="actions full-width">
+                <button class="btn" type="submit">Agendar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Formato dos valores</h2>
+        <p>Os valores enviados seguem padrões definidos:</p>
+        <ul>
+            <li><code>date</code> — <code>AAAA-MM-DD</code></li>
+            <li><code>time</code> — <code>HH:MM</code> ou <code>HH:MM:SS</code></li>
+            <li><code>datetime-local</code> — <code>AAAA-MM-DDTHH:MM</code></li>
+            <li><code>month</code> — <code>AAAA-MM</code></li>
+            <li><code>week</code> — <code>AAAA-Wss</code></li>
+        </ul>
+        <p>A interface exibida depende do navegador e do sistema operacional, mas o valor enviado é padronizado.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 58</strong> — Inputs de data e horário</div>
+</footer>
+
+</body>
+
+</html>

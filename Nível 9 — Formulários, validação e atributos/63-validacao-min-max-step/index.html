@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Defina faixas e intervalos válidos para números, datas, horários e controles deslizantes.">
+    <meta name="keywords" content="HTML, validação, min, max, step, number, date, range, time">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Validação com Min, Max e Step</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 63</span>
+        <h1>Validação com Min, Max e Step</h1>
+        <p>Os atributos min, max e step limitam os valores aceitos e orientam os controles nativos.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Agendamento de aula</h2>
+        <form action="#" method="post" class="form-grid two-columns">
+            <div class="field">
+                <label for="participantes">Participantes</label>
+                <input id="participantes" name="participantes" type="number" min="1" max="30" step="1" value="10" required>
+                <p class="help">Entre 1 e 30 pessoas.</p>
+            </div>
+
+            <div class="field">
+                <label for="data-aula">Data da aula</label>
+                <input id="data-aula" name="data_aula" type="date" min="2026-01-01" max="2026-12-31" required>
+                <p class="help">Somente datas de 2026.</p>
+            </div>
+
+            <div class="field">
+                <label for="hora-aula">Horário de início</label>
+                <input id="hora-aula" name="hora_aula" type="time" min="08:00" max="20:00" step="900" required>
+                <p class="help">De 8h a 20h, em intervalos de 15 minutos.</p>
+            </div>
+
+            <div class="field">
+                <label for="nivel">Nível de dificuldade</label>
+                <input id="nivel" name="nivel" type="range" min="1" max="5" step="1" value="3">
+                <p class="help">1 = iniciante; 5 = avançado.</p>
+            </div>
+
+            <div class="actions full-width">
+                <button class="btn" type="submit">Agendar aula</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Como o navegador valida</h2>
+        <ul>
+            <li>Um número fora da faixa impede o envio.</li>
+            <li>O atributo <code>step</code> define os incrementos permitidos.</li>
+            <li>Em horários, <code>step="900"</code> representa 900 segundos, ou 15 minutos.</li>
+            <li>A mensagem de erro é exibida pelo próprio navegador.</li>
+        </ul>
+        <p class="note"><strong>Lembrete:</strong> validação no navegador melhora a experiência, mas não substitui a
+            validação no servidor.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 63</strong> — Validação com Min, Max e Step</div>
+</footer>
+
+</body>
+
+</html>

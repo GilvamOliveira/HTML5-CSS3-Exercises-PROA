@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Adicione interatividade a uma página HTML com JavaScript externo, manipulação do DOM e eventos de clique.">
+    <meta name="keywords" content="HTML, JavaScript, DOM, eventos, interatividade">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>HTML encontrando JavaScript</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 33</span>
+        <h1>HTML encontrando JavaScript</h1>
+        <p>JavaScript permite responder a ações do usuário e atualizar a página sem recarregá-la.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Alterando uma mensagem</h2>
+        <p id="mensagem">Clique no botão para alterar este texto.</p>
+        <button class="btn" id="btn-mensagem" type="button">Alterar mensagem</button>
+    </section>
+
+    <section class="card">
+        <h2>Contador de cliques</h2>
+        <p class="counter" id="contador">0</p>
+        <div class="button-row">
+            <button class="btn" id="btn-incrementar" type="button">Incrementar</button>
+            <button class="btn btn-secondary" id="btn-zerar" type="button">Zerar</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Data e hora atuais</h2>
+        <p id="data-hora">Carregando...</p>
+        <button class="btn btn-secondary" id="btn-atualizar" type="button">Atualizar data e hora</button>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 33</strong> — HTML encontrando JavaScript</div>
+</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

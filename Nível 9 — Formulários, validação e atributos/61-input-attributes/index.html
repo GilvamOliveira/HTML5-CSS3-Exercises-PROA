@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Conheça atributos que controlam valor inicial, edição, tamanho, preenchimento e comportamento dos campos.">
+    <meta name="keywords" content="HTML, input, atributos, value, readonly, disabled, maxlength">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Input Attributes</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 61</span>
+        <h1>Input Attributes</h1>
+        <p>Pequenos atributos mudam bastante o comportamento de um campo. Use-os de acordo com a intenção do formulário.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Demonstração</h2>
+        <form action="#" method="post" class="form-grid two-columns">
+            <div class="field">
+                <label for="valor">Com valor inicial — <code>value</code></label>
+                <input id="valor" name="valor" type="text" value="Texto inicial">
+            </div>
+
+            <div class="field">
+                <label for="somente-leitura">Somente leitura — <code>readonly</code></label>
+                <input id="somente-leitura" name="somente_leitura" type="text" value="Pode copiar, não editar" readonly>
+            </div>
+
+            <div class="field">
+                <label for="desabilitado">Desabilitado — <code>disabled</code></label>
+                <input id="desabilitado" name="desabilitado" type="text" value="Não é enviado" disabled>
+            </div>
+
+            <div class="field">
+                <label for="tamanho">Tamanho visível — <code>size</code></label>
+                <input id="tamanho" name="tamanho" type="text" size="12" placeholder="12 caracteres">
+            </div>
+
+            <div class="field">
+                <label for="limite">Limite — <code>maxlength</code></label>
+                <input id="limite" name="limite" type="text" maxlength="10" placeholder="Até 10 caracteres">
+            </div>
+
+            <div class="field">
+                <label for="minimo">Mínimo — <code>minlength</code></label>
+                <input id="minimo" name="minimo" type="text" minlength="4" placeholder="Pelo menos 4 caracteres">
+            </div>
+
+            <div class="field">
+                <label for="dica">Dica — <code>placeholder</code></label>
+                <input id="dica" name="dica" type="text" placeholder="Digite algo aqui">
+            </div>
+
+            <div class="field">
+                <label for="numerico">Teclado numérico — <code>inputmode</code></label>
+                <input id="numerico" name="numerico" type="text" inputmode="numeric" placeholder="Somente números">
+            </div>
+
+            <div class="actions full-width">
+                <button class="btn" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Readonly x disabled</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>readonly</th>
+                        <th>disabled</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pode editar</td><td>Não</td><td>Não</td></tr>
+                    <tr><td>Pode focar</td><td>Sim</td><td>Não</td></tr>
+                    <tr><td>É enviado</td><td>Sim</td><td>Não</td></tr>
+                    <tr><td>Uso típico</td><td>Dado calculado ou fixo</td><td>Opção indisponível</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 61</strong> — Input Attributes</div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="titulo">
+  <title id="titulo">Logotipo Curso em Foco</title>
+  <defs>
+    <linearGradient id="g70" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0b5ed7"/>
+  <path d="M18 22 8 32l10 10M46 22l10 10-10 10" fill="none" stroke="url(#g70)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m38 16-12 32" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+</svg>

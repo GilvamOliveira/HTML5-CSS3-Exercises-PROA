@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Pratique a estrutura de uma regra CSS, diferentes seletores, formatos de cor e comentários.">
+    <meta name="keywords" content="CSS, sintaxe, seletores, cores, comentários, especificidade">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Sintaxe, seletores, cores e comentários</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 68</span>
+        <h1>Sintaxe, seletores, cores e comentários</h1>
+        <p>Uma regra CSS conecta um seletor a um conjunto de declarações.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Sintaxe básica</h2>
+        <pre><code>seletor {
+    propriedade: valor;
+    outra-propriedade: outro-valor;
+}</code></pre>
+        <p>O seletor escolhe os elementos. Cada declaração possui uma propriedade e um valor, separados por dois-pontos
+            e finalizados com ponto e vírgula.</p>
+    </section>
+
+    <section class="card">
+        <h2>Seletores na prática</h2>
+        <p>Parágrafo comum, estilizado pelo seletor de elemento.</p>
+        <p class="destaque">Parágrafo com a classe <code>.destaque</code>.</p>
+        <p id="unico">Parágrafo com o ID <code>#unico</code>.</p>
+        <p data-tipo="aviso">Parágrafo com o atributo <code>data-tipo="aviso"</code>.</p>
+        <p><a class="link-demo" href="#">Passe o mouse para ver a pseudo-classe :hover</a></p>
+    </section>
+
+    <section class="card">
+        <h2>Cores</h2>
+        <div class="swatches">
+            <div class="swatch swatch-hex"><span>#0b5ed7</span></div>
+            <div class="swatch swatch-rgb"><span>rgb(11, 94, 215)</span></div>
+            <div class="swatch swatch-hsl"><span>hsl(215, 90%, 44%)</span></div>
+            <div class="swatch swatch-named"><span>navy</span></div>
+        </div>
+        <pre><code>color: #0b5ed7;
+color: rgb(11, 94, 215);
+color: hsl(215, 90%, 44%);
+color: navy;</code></pre>
+        <p>Todos os exemplos representam cores válidas. Escolha o formato mais legível para o contexto.</p>
+    </section>
+
+    <section class="card">
+        <h2>Comentários</h2>
+        <pre><code>/* Comentário de uma linha */
+
+p {
+    color: #333333; /* comentário no fim da linha */
+}
+
+/*
+    Comentário de várias linhas
+    para explicar um bloco maior.
+*/</code></pre>
+        <p class="note">Comentários não aparecem na página e ajudam a documentar decisões de estilo.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 68</strong> — Sintaxe, seletores, cores e comentários</div>
+</footer>
+
+</body>
+
+</html>

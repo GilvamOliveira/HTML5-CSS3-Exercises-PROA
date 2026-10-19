@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Use o elemento iframe para incorporar uma página local dentro de outra e conheça seus principais atributos.">
+    <meta name="keywords" content="HTML, iframe, conteúdo incorporado, acessibilidade, sandbox">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Incorporando conteúdo com iframe</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 32</span>
+        <h1>Incorporando conteúdo com iframe</h1>
+        <p>Um iframe abre outra página dentro de uma área delimitada. Aqui a página incorporada é local, evitando dependência de serviços externos.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Página incorporada</h2>
+        <p>O atributo <code>title</code> descreve o conteúdo para leitores de tela. O atributo
+            <code>loading="lazy"</code> adia o carregamento até que o iframe fique próximo da área visível.</p>
+
+        <div class="frame-wrapper">
+            <iframe src="exemplo.html" title="Exemplo de página interna carregada em um iframe"
+                width="100%" height="360" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Atributos importantes</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>src</code></td>
+                        <td>Endereço da página que será carregada.</td>
+                    </tr>
+                    <tr>
+                        <td><code>title</code></td>
+                        <td>Descrição acessível do conteúdo incorporado.</td>
+                    </tr>
+                    <tr>
+                        <td><code>loading</code></td>
+                        <td>Controla o carregamento antecipado ou tardio.</td>
+                    </tr>
+                    <tr>
+                        <td><code>sandbox</code></td>
+                        <td>Restringe recursos e scripts da página incorporada.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note"><strong>Atenção:</strong> iframes de sites externos podem ser bloqueados pela política de
+            segurança do próprio site. Prefira conteúdo confiável e sempre informe um <code>title</code>.</p>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 32</strong> — Incorporando conteúdo com iframe</div>
+</footer>
+
+</body>
+
+</html>

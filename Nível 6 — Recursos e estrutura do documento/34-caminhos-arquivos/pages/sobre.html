@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Esta página está dentro da pasta pages e precisa voltar um nível para alcançar os recursos da raiz.">
+    <meta name="keywords" content="HTML, caminhos relativos, links, navegação">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Sobre o projeto — Exercício 34</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 34</span>
+        <h1>Sobre o projeto</h1>
+        <p>Esta página está dentro da pasta pages e precisa voltar um nível para alcançar os recursos da raiz.</p>
+    </div>
+</header>
+
+<nav class="site-nav">
+    <div class="container nav-row">
+        <a href="../index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </div>
+</nav>
+
+<main class="container">
+    <section class="card">
+        <h2>Caminho de volta</h2>
+        <p>Para carregar o CSS compartilhado, esta página usa <code>../assets/css/style.css</code>. O mesmo acontece
+            com o favicon e com o logotipo.</p>
+        <p>Já o link para a página inicial usa <code>../index.html</code>, porque o arquivo está um nível acima.</p>
+      </section>
+      <section class="card">
+        <h2>Link entre páginas internas</h2>
+        <p>Como Sobre e Contato estão na mesma pasta, o caminho é apenas <code>contato.html</code>.</p>
+        <a class="btn" href="contato.html">Ir para Contato</a>
+      </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 34</strong> — Organizando caminhos de arquivos</div>
+</footer>
+
+</body>
+
+</html>

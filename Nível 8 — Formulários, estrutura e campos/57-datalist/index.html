@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Ofereça sugestões de preenchimento com datalist sem impedir que o usuário digite um valor próprio.">
+    <meta name="keywords" content="HTML, datalist, input, sugestões, autocomplete">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Datalist</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 57</span>
+        <h1>Datalist</h1>
+        <p>Datalist combina a liberdade de um campo de texto com sugestões prontas para o usuário.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Escolha uma tecnologia</h2>
+        <form action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="tecnologia">Tecnologia de interesse</label>
+                <input id="tecnologia" name="tecnologia" type="text" list="sugestoes-tecnologias"
+                    placeholder="Digite ou escolha uma sugestão">
+                <datalist id="sugestoes-tecnologias">
+                    <option value="HTML5"></option>
+                    <option value="CSS3"></option>
+                    <option value="JavaScript"></option>
+                    <option value="React"></option>
+                    <option value="Vue.js"></option>
+                    <option value="Node.js"></option>
+                    <option value="Python"></option>
+                    <option value="SQL"></option>
+                </datalist>
+                <p class="help">Você pode digitar uma tecnologia que não esteja na lista.</p>
+            </div>
+
+            <div class="field">
+                <label for="cidade-datalist">Cidade</label>
+                <input id="cidade-datalist" name="cidade" type="text" list="sugestoes-cidades"
+                    placeholder="Digite sua cidade">
+                <datalist id="sugestoes-cidades">
+                    <option value="São Paulo"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Belo Horizonte"></option>
+                    <option value="Curitiba"></option>
+                    <option value="Recife"></option>
+                    <option value="Salvador"></option>
+                </datalist>
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Select ou datalist?</h2>
+        <p>Use <strong>select</strong> quando o usuário deve escolher apenas uma opção válida da lista. Use
+            <strong>datalist</strong> quando as sugestões são apenas uma ajuda e o valor digitado pode ser diferente.</p>
+        <pre><code>&lt;input list="sugestoes" name="tecnologia"&gt;
+&lt;datalist id="sugestoes"&gt;
+    &lt;option value="HTML5"&gt;
+    &lt;option value="CSS3"&gt;
+&lt;/datalist&gt;</code></pre>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 57</strong> — Datalist</div>
+</footer>
+
+</body>
+
+</html>

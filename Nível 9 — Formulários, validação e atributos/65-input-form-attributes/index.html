@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Controle o envio de um formulário com formaction, formmethod, formnovalidate, formtarget e o atributo form.">
+    <meta name="keywords" content="HTML, formaction, formmethod, formnovalidate, formtarget, atributo form">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Input Form Attributes</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 65</span>
+        <h1>Input Form Attributes</h1>
+        <p>Alguns atributos permitem que um botão sobrescreva o comportamento do formulário no momento do envio.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Formulário com ações diferentes</h2>
+        <form id="form-65" action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="titulo-65">Título do projeto</label>
+                <input id="titulo-65" name="titulo" type="text" placeholder="Nome do projeto" required>
+            </div>
+
+            <div class="field">
+                <label for="descricao-65">Descrição</label>
+                <textarea id="descricao-65" name="descricao" rows="4" placeholder="Descreva o projeto" required></textarea>
+            </div>
+
+            <div class="field">
+                <label for="anexo-65">Anexo</label>
+                <input id="anexo-65" name="anexo" type="file" accept=".pdf,.txt">
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Salvar</button>
+                <button class="btn btn-secondary" type="submit" formaction="#" formmethod="get" formnovalidate>
+                    Pré-visualizar sem validar
+                </button>
+                <button class="btn btn-secondary" type="submit" formaction="#" formenctype="multipart/form-data"
+                    formtarget="_blank">
+                    Abrir em nova aba
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Controle associado fora do formulário</h2>
+        <p>O atributo <code>form</code> permite associar um campo a um formulário mesmo que ele esteja fora da tag
+            <code>&lt;form&gt;</code>.</p>
+        <div class="field">
+            <label for="cupom-65">Cupom de desconto</label>
+            <input id="cupom-65" name="cupom" type="text" form="form-65" placeholder="Ex.: PROA2026">
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Resumo</h2>
+        <ul>
+            <li><code>formaction</code> muda o destino do envio.</li>
+            <li><code>formmethod</code> muda o método HTTP.</li>
+            <li><code>formenctype</code> muda a codificação dos dados.</li>
+            <li><code>formnovalidate</code> ignora a validação nativa naquele botão.</li>
+            <li><code>formtarget</code> define onde a resposta será aberta.</li>
+            <li><code>form</code> associa um controle a um formulário pelo <code>id</code>.</li>
+        </ul>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 65</strong> — Input Form Attributes</div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Explore fundos, bordas, margens e preenchimento para construir e compreender o modelo de caixa do CSS.">
+    <meta name="keywords" content="CSS, background, border, margin, padding, box model">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Background, Border, Margin e Padding</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 69</span>
+        <h1>Background, Border, Margin e Padding</h1>
+        <p>Todo elemento visível é uma caixa formada por conteúdo, padding, borda e margem.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>O modelo de caixa</h2>
+        <div class="box-demo" aria-label="Representação das camadas margin, border, padding e conteúdo">
+            <div class="margin-layer">
+                <span class="layer-label">margin</span>
+                <div class="border-layer">
+                    <span class="layer-label">border</span>
+                    <div class="padding-layer">
+                        <span class="layer-label">padding</span>
+                        <div class="content-layer">conteúdo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><strong>Conteúdo:</strong> texto, imagem ou outro elemento.</li>
+            <li><strong>Padding:</strong> espaço interno entre conteúdo e borda.</li>
+            <li><strong>Borda:</strong> linha ao redor do padding.</li>
+            <li><strong>Margem:</strong> espaço externo entre a caixa e os vizinhos.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Backgrounds</h2>
+        <div class="bg-grid">
+            <div class="bg-box bg-color">Cor sólida</div>
+            <div class="bg-box bg-gradient">Gradiente</div>
+            <div class="bg-box bg-pattern">Imagem repetida</div>
+            <div class="bg-box bg-cover">Imagem de capa</div>
+        </div>
+        <pre><code>.bg-pattern {
+    background-image: url("../img/pattern.svg");
+    background-repeat: repeat;
+}
+
+.bg-cover {
+    background-image: url("../img/paisagem.svg");
+    background-size: cover;
+    background-position: center;
+}</code></pre>
+    </section>
+
+    <section class="card">
+        <h2>Bordas</h2>
+        <div class="border-grid">
+            <div class="border-box border-solid">solid</div>
+            <div class="border-box border-dashed">dashed</div>
+            <div class="border-box border-dotted">dotted</div>
+            <div class="border-box border-radius">arredondada</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Margin e padding</h2>
+        <div class="spacing-demo">
+            <div class="spacing-outer">
+                margin
+                <div class="spacing-inner">
+                    padding + conteúdo
+                </div>
+            </div>
+        </div>
+        <p>Use <code>padding</code> para dar respiro dentro da caixa e <code>margin</code> para afastar caixas
+            vizinhas. Com <code>box-sizing: border-box</code>, largura e altura incluem padding e borda.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 69</strong> — Background, Border, Margin e Padding</div>
+</footer>
+
+</body>
+
+</html>

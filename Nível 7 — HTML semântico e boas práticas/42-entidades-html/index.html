@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Represente caracteres reservados e símbolos especiais com entidades HTML em tabelas e exemplos de código.">
+    <meta name="keywords" content="HTML, entidades, caracteres reservados, símbolos, Unicode">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Entidades HTML</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 42</span>
+        <h1>Entidades HTML</h1>
+        <p>Alguns caracteres são reservados pelo HTML. As entidades permitem exibi-los sem que o navegador os interprete como marcação.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Tabela de entidades</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resultado</th>
+                        <th>Entidade</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>&lt;</td><td><code>&amp;lt;</code></td><td>Menor que</td></tr>
+                    <tr><td>&gt;</td><td><code>&amp;gt;</code></td><td>Maior que</td></tr>
+                    <tr><td>&amp;</td><td><code>&amp;amp;</code></td><td>E comercial</td></tr>
+                    <tr><td>&quot;</td><td><code>&amp;quot;</code></td><td>Aspas duplas</td></tr>
+                    <tr><td>&apos;</td><td><code>&amp;apos;</code></td><td>Aspas simples</td></tr>
+                    <tr><td>&copy;</td><td><code>&amp;copy;</code></td><td>Copyright</td></tr>
+                    <tr><td>&reg;</td><td><code>&amp;reg;</code></td><td>Marca registrada</td></tr>
+                    <tr><td>&trade;</td><td><code>&amp;trade;</code></td><td>Marca comercial</td></tr>
+                    <tr><td>&nbsp;</td><td><code>&amp;nbsp;</code></td><td>Espaço não separável</td></tr>
+                    <tr><td>&euro;</td><td><code>&amp;euro;</code></td><td>Euro</td></tr>
+                    <tr><td>&pound;</td><td><code>&amp;pound;</code></td><td>Libra esterlina</td></tr>
+                    <tr><td>&yen;</td><td><code>&amp;yen;</code></td><td>Iene</td></tr>
+                    <tr><td>&deg;</td><td><code>&amp;deg;</code></td><td>Grau</td></tr>
+                    <tr><td>&times;</td><td><code>&amp;times;</code></td><td>Multiplicação</td></tr>
+                    <tr><td>&divide;</td><td><code>&amp;divide;</code></td><td>Divisão</td></tr>
+                    <tr><td>&rarr;</td><td><code>&amp;rarr;</code></td><td>Seta para a direita</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Por que escapar?</h2>
+        <p>Se escrevermos <code>&lt;strong&gt;</code> diretamente no conteúdo, o navegador interpreta a tag. Para mostrar
+            o texto literal, usamos <code>&amp;lt;strong&amp;gt;</code>.</p>
+        <pre><code>&lt;p&gt;Use &amp;lt;strong&amp;gt; para destacar uma palavra.&lt;/p&gt;</code></pre>
+        <p>Resultado: <code>&lt;strong&gt;</code> aparece como texto em vez de virar um elemento.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 42</strong> — Entidades HTML</div>
+</footer>
+
+</body>
+
+</html>

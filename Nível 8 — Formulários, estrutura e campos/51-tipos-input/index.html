@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Pratique os principais tipos de input e observe como cada um adapta teclado, validação e interface.">
+    <meta name="keywords" content="HTML, input, tipos, email, password, tel, url, search, number, date">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Tipos básicos de input</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 51</span>
+        <h1>Tipos básicos de input</h1>
+        <p>O tipo do campo orienta o navegador sobre o formato esperado e melhora a experiência em dispositivos móveis.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Formulário de perfil</h2>
+        <form action="#" method="post" class="form-grid two-columns">
+            <div class="field">
+                <label for="nome-input">Nome — <code>text</code></label>
+                <input id="nome-input" name="nome" type="text" autocomplete="name" placeholder="Nome completo">
+            </div>
+
+            <div class="field">
+                <label for="email-input">E-mail — <code>email</code></label>
+                <input id="email-input" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com">
+            </div>
+
+            <div class="field">
+                <label for="senha-input">Senha — <code>password</code></label>
+                <input id="senha-input" name="senha" type="password" autocomplete="current-password" placeholder="Sua senha">
+            </div>
+
+            <div class="field">
+                <label for="telefone-input">Telefone — <code>tel</code></label>
+                <input id="telefone-input" name="telefone" type="tel" autocomplete="tel" placeholder="(11) 91234-5678">
+            </div>
+
+            <div class="field">
+                <label for="site-input">Site — <code>url</code></label>
+                <input id="site-input" name="site" type="url" autocomplete="url" placeholder="https://exemplo.com">
+            </div>
+
+            <div class="field">
+                <label for="busca-input">Busca — <code>search</code></label>
+                <input id="busca-input" name="busca" type="search" placeholder="O que você procura?">
+            </div>
+
+            <div class="field">
+                <label for="idade-input">Idade — <code>number</code></label>
+                <input id="idade-input" name="idade" type="number" min="0" max="120" placeholder="Ex.: 18">
+            </div>
+
+            <div class="field">
+                <label for="data-input">Data — <code>date</code></label>
+                <input id="data-input" name="data" type="date">
+            </div>
+
+            <div class="actions full-width">
+                <button class="btn" type="submit">Enviar perfil</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Por que o tipo importa?</h2>
+        <ul>
+            <li>Em celulares, o teclado se adapta ao tipo de dado.</li>
+            <li>O navegador pode validar formato de e-mail, URL e número.</li>
+            <li>Leitores de tela anunciam o campo com mais contexto.</li>
+            <li>O preenchimento automático funciona melhor com <code>autocomplete</code>.</li>
+        </ul>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 51</strong> — Tipos básicos de input</div>
+</footer>
+
+</body>
+
+</html>

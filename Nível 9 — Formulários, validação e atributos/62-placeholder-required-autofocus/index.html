@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Melhore a orientação e a validação do formulário com dicas, campos obrigatórios e foco inicial automático.">
+    <meta name="keywords" content="HTML, placeholder, required, autofocus, validação, formulário">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Placeholder, Required e Autofocus</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 62</span>
+        <h1>Placeholder, Required e Autofocus</h1>
+        <p>Esses atributos orientam o preenchimento, mas não substituem rótulos claros nem validação no servidor.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Crie seu acesso</h2>
+        <p>O campo de nome recebe foco automaticamente ao abrir a página.</p>
+
+        <form action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="nome-foco">Nome completo <span class="required">*</span></label>
+                <input id="nome-foco" name="nome" type="text" placeholder="Ex.: Ana Souza" autocomplete="name" required autofocus>
+            </div>
+
+            <div class="field">
+                <label for="email-foco">E-mail <span class="required">*</span></label>
+                <input id="email-foco" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+                <label for="usuario-foco">Nome de usuário <span class="required">*</span></label>
+                <input id="usuario-foco" name="usuario" type="text" placeholder="Minúsculas, números e _" minlength="4" maxlength="16" required>
+                <p class="help">De 4 a 16 caracteres.</p>
+            </div>
+
+            <div class="field">
+                <label for="senha-foco">Senha <span class="required">*</span></label>
+                <input id="senha-foco" name="senha" type="password" placeholder="Mínimo de 8 caracteres" minlength="8" autocomplete="new-password" required>
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Criar acesso</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Boa prática</h2>
+        <ul>
+            <li>Use <code>placeholder</code> como exemplo, não como rótulo.</li>
+            <li>Marque como <code>required</code> apenas o que realmente for obrigatório.</li>
+            <li>Use <code>autofocus</code> em um único campo por página.</li>
+            <li>Mantenha a validação também no servidor.</li>
+        </ul>
+        <p class="note">O CSS desta página destaca campos inválidos apenas depois que o usuário digitou algo, evitando
+            que todos os campos apareçam em erro antes da interação.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 62</strong> — Placeholder, Required e Autofocus</div>
+</footer>
+
+</body>
+
+</html>

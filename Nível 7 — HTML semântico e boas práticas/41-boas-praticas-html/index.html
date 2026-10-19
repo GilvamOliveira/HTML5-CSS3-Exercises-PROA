@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Revise um conjunto de boas práticas de estrutura, acessibilidade e organização que devem acompanhar todo documento HTML.">
+    <meta name="keywords" content="HTML, boas práticas, acessibilidade, semântica, validação">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Aplicando boas práticas HTML</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 41</span>
+        <h1>Aplicando boas práticas HTML</h1>
+        <p>Um documento de qualidade é compreensível para pessoas, navegadores e tecnologias assistivas.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Checklist essencial</h2>
+        <ul class="checklist">
+            <li>Declare <code>&lt;!DOCTYPE html&gt;</code> na primeira linha.</li>
+            <li>Informe o idioma com <code>&lt;html lang="pt-BR"&gt;</code>.</li>
+            <li>Use <code>&lt;meta charset="UTF-8"&gt;</code> para acentos e símbolos.</li>
+            <li>Inclua <code>viewport</code> para telas móveis.</li>
+            <li>Escreva um <code>title</code> único e descritivo.</li>
+            <li>Mantenha a hierarquia de títulos: <code>h1</code>, depois <code>h2</code>, e assim por diante.</li>
+            <li>Use elementos semânticos antes de recorrer a <code>div</code>.</li>
+            <li>Forneça <code>alt</code> para imagens informativas.</li>
+            <li>Associe cada campo de formulário a um <code>label</code>.</li>
+            <li>Prefira textos de link descritivos, como “baixar o edital”, em vez de “clique aqui”.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Compare</h2>
+        <div class="compare-grid">
+            <article class="example good">
+                <h3>Boa prática</h3>
+                <pre><code>&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Contato — Loja Exemplo&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;label for="email"&gt;E-mail&lt;/label&gt;
+&lt;input id="email" type="email"&gt;
+
+&lt;img src="logo.svg" alt="Logotipo da Loja Exemplo"&gt;</code></pre>
+            </article>
+            <article class="example bad">
+                <h3>Evite</h3>
+                <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Página&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;p&gt;E-mail&lt;/p&gt;
+&lt;input type="email"&gt;
+
+&lt;img src="logo.svg"&gt;</code></pre>
+            </article>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Validação</h2>
+        <p>Depois de escrever o HTML, verifique se as tags estão fechadas, se os IDs são únicos e se os caminhos de
+            arquivos estão corretos. Ferramentas de validação ajudam a encontrar erros que o navegador costuma corrigir
+            silenciosamente.</p>
+        <p class="note">Boas práticas não são regras decorativas: elas melhoram a experiência de quem usa e de quem
+            mantém o projeto.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 41</strong> — Aplicando boas práticas HTML</div>
+</footer>
+
+</body>
+
+</html>

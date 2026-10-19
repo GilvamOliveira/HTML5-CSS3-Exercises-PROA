@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Use expressões regulares no atributo pattern para validar formatos específicos diretamente no navegador.">
+    <meta name="keywords" content="HTML, pattern, regex, validação, formulário, CEP">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Pattern</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 64</span>
+        <h1>Pattern</h1>
+        <p>O atributo pattern aceita uma expressão regular. Ele verifica o formato, mas não confirma se o dado existe.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Cadastro com formatos específicos</h2>
+        <form action="#" method="post" class="form-grid two-columns">
+            <div class="field">
+                <label for="cep-pattern">CEP</label>
+                <input id="cep-pattern" name="cep" type="text" inputmode="numeric"
+                    pattern="[0-9]{5}-[0-9]{3}" title="Digite o CEP no formato 00000-000"
+                    placeholder="00000-000" required>
+                <p class="help">Formato: 00000-000.</p>
+            </div>
+
+            <div class="field">
+                <label for="telefone-pattern">Telefone</label>
+                <input id="telefone-pattern" name="telefone" type="tel"
+                    pattern="\(?[0-9]{2}\)?\s?[0-9]{4,5}-?[0-9]{4}"
+                    title="Use (11) 91234-5678 ou 11912345678"
+                    placeholder="(11) 91234-5678" required>
+                <p class="help">Aceita com ou sem parênteses e hífen.</p>
+            </div>
+
+            <div class="field">
+                <label for="usuario-pattern">Nome de usuário</label>
+                <input id="usuario-pattern" name="usuario" type="text"
+                    pattern="[a-zA-Z0-9_]{3,15}"
+                    title="Use de 3 a 15 letras, números ou sublinhado"
+                    placeholder="exemplo_2026" required>
+                <p class="help">Letras, números e sublinhado, de 3 a 15 caracteres.</p>
+            </div>
+
+            <div class="field">
+                <label for="codigo-pattern">Código do curso</label>
+                <input id="codigo-pattern" name="codigo" type="text"
+                    pattern="[A-Z]{3}-[0-9]{4}"
+                    title="Use três letras maiúsculas, hífen e quatro números"
+                    placeholder="PRO-2026" required>
+                <p class="help">Formato: três letras, hífen e quatro números.</p>
+            </div>
+
+            <div class="actions full-width">
+                <button class="btn" type="submit">Validar cadastro</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Entendendo as expressões</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trecho</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>[0-9]</code></td><td>Um dígito de 0 a 9.</td></tr>
+                    <tr><td><code>{5}</code></td><td>Exatamente cinco repetições.</td></tr>
+                    <tr><td><code>{3,15}</code></td><td>Entre três e quinze repetições.</td></tr>
+                    <tr><td><code>[A-Z]</code></td><td>Uma letra maiúscula.</td></tr>
+                    <tr><td><code>\s?</code></td><td>Um espaço opcional.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">O <code>title</code> deve explicar o formato esperado. O navegador usa esse texto na mensagem de
+            validação.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 64</strong> — Pattern</div>
+</footer>
+
+</body>
+
+</html>

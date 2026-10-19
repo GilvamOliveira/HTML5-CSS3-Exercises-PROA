@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="titulo">
+  <title id="titulo">Ilustração de uma pessoa estudando desenvolvimento web</title>
+  <defs>
+    <linearGradient id="tela70" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" rx="28" fill="rgba(255,255,255,.08)"/>
+  <rect x="66" y="62" width="300" height="196" rx="16" fill="url(#tela70)" opacity=".97"/>
+  <rect x="82" y="84" width="96" height="12" rx="6" fill="#0b5ed7"/>
+  <rect x="82" y="110" width="250" height="8" rx="4" fill="#9db7d5"/>
+  <rect x="82" y="128" width="210" height="8" rx="4" fill="#9db7d5"/>
+  <rect x="82" y="162" width="110" height="72" rx="10" fill="#eaf2ff"/>
+  <rect x="204" y="162" width="128" height="72" rx="10" fill="#dbeafe"/>
+  <rect x="96" y="178" width="62" height="8" rx="4" fill="#0b5ed7" opacity=".7"/>
+  <rect x="218" y="178" width="78" height="8" rx="4" fill="#173b68" opacity=".45"/>
+  <rect x="218" y="196" width="54" height="8" rx="4" fill="#173b68" opacity=".3"/>
+  <rect x="366" y="118" width="92" height="170" rx="20" fill="#ffffff" opacity=".97"/>
+  <rect x="380" y="142" width="64" height="9" rx="4" fill="#0b5ed7"/>
+  <rect x="380" y="162" width="48" height="7" rx="3" fill="#9db7d5"/>
+  <rect x="380" y="192" width="64" height="52" rx="9" fill="#eaf2ff"/>
+  <circle cx="412" cy="270" r="7" fill="#0b5ed7"/>
+  <circle cx="92" cy="294" r="26" fill="#fde68a" opacity=".9"/>
+  <rect x="130" y="286" width="120" height="10" rx="5" fill="#ffffff" opacity=".55"/>
+  <rect x="130" y="306" width="80" height="8" rx="4" fill="#ffffff" opacity=".35"/>
+</svg>

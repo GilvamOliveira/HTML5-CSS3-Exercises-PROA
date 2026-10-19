@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Explore os atributos do elemento form que controlam envio, método, destino, codificação e validação.">
+    <meta name="keywords" content="HTML, form, action, method, target, enctype, autocomplete">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Form Attributes</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 50</span>
+        <h1>Form Attributes</h1>
+        <p>Os atributos do formulário definem para onde, como e com qual formato os dados serão enviados.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Principais atributos</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Função</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>action</code></td>
+                        <td>Endereço que recebe os dados.</td>
+                        <td><code>action="/cadastro"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>method</code></td>
+                        <td>Método HTTP usado no envio.</td>
+                        <td><code>method="post"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>target</code></td>
+                        <td>Onde abrir a resposta.</td>
+                        <td><code>target="_blank"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>enctype</code></td>
+                        <td>Formato dos dados enviados.</td>
+                        <td><code>enctype="multipart/form-data"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>autocomplete</code></td>
+                        <td>Permite sugestões do navegador.</td>
+                        <td><code>autocomplete="on"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>novalidate</code></td>
+                        <td>Desativa a validação nativa.</td>
+                        <td><code>novalidate</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Formulário de exemplo</h2>
+        <form action="#" method="post" autocomplete="on" class="form-grid">
+            <div class="field">
+                <label for="nome-attrs">Nome</label>
+                <input id="nome-attrs" name="nome" type="text" autocomplete="name" placeholder="Seu nome">
+            </div>
+            <div class="field">
+                <label for="email-attrs">E-mail</label>
+                <input id="email-attrs" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com">
+            </div>
+            <div class="actions">
+                <button class="btn" type="submit">Enviar com method="post"</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>GET e POST</h2>
+        <p><strong>GET</strong> envia os dados na URL e é indicado para buscas e filtros. <strong>POST</strong> envia os
+            dados no corpo da requisição e é mais adequado para cadastros, login e informações sensíveis.</p>
+        <p>Nenhum dado é processado neste exemplo: o formulário usa <code>action="#"</code> apenas para demonstração.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 50</strong> — Form Attributes</div>
+</footer>
+
+</body>
+
+</html>

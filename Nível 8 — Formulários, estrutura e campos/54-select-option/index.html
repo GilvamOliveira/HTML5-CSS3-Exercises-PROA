@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Crie listas suspensas com select, option, optgroup e seleção múltipla para organizar muitas opções.">
+    <meta name="keywords" content="HTML, select, option, optgroup, formulário, lista suspensa">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Select e Option</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 54</span>
+        <h1>Select e Option</h1>
+        <p>Listas suspensas economizam espaço quando há muitas opções. O elemento optgroup agrupa alternativas relacionadas.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Escolha seu curso</h2>
+        <form action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="curso">Curso</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecione um curso</option>
+                    <optgroup label="Desenvolvimento web">
+                        <option value="html-css">HTML5 e CSS3</option>
+                        <option value="javascript" selected>JavaScript</option>
+                        <option value="frontend">Front-end completo</option>
+                    </optgroup>
+                    <optgroup label="Dados e produtividade">
+                        <option value="excel">Excel avançado</option>
+                        <option value="sql">SQL para análise de dados</option>
+                    </optgroup>
+                    <optgroup label="Design">
+                        <option value="ux-ui">UX/UI Design</option>
+                        <option value="figma">Figma</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="turno">Turno</label>
+                <select id="turno" name="turno">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite" selected>Noite</option>
+                    <option value="sabado" disabled>Sábado (turma encerrada)</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="modalidades">Modalidades de interesse</label>
+                <select id="modalidades" name="modalidades" multiple size="4">
+                    <option value="online" selected>Online ao vivo</option>
+                    <option value="gravado">Aulas gravadas</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="hibrido">Híbrido</option>
+                </select>
+                <p class="help">Segure <kbd>Ctrl</kbd> (Windows) ou <kbd>Command</kbd> (macOS) para selecionar mais de uma opção.</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Confirmar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Atributos úteis</h2>
+        <ul>
+            <li><code>selected</code> define a opção inicial.</li>
+            <li><code>disabled</code> impede a seleção de uma opção.</li>
+            <li><code>multiple</code> permite várias escolhas.</li>
+            <li><code>size</code> exibe mais de uma linha por vez.</li>
+            <li><code>optgroup</code> agrupa opções com um rótulo.</li>
+        </ul>
+        <pre><code>&lt;select name="curso"&gt;
+    &lt;optgroup label="Desenvolvimento web"&gt;
+        &lt;option value="html"&gt;HTML5 e CSS3&lt;/option&gt;
+        &lt;option value="js"&gt;JavaScript&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 54</strong> — Select e Option</div>
+</footer>
+
+</body>
+
+</html>

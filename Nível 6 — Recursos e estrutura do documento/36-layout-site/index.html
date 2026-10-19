@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Monte a estrutura visual de um site com cabeçalho, navegação, conteúdo principal, barra lateral e rodapé.">
+    <meta name="keywords" content="HTML, CSS, layout, grid, flexbox, site">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Criando um layout de site</title>
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container header-row">
+        <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span>Projeto Layout</span>
+        </a>
+        <nav aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container layout" id="inicio">
+    <section class="content" id="conteudo">
+        <span class="eyebrow">Exercício 36</span>
+        <h1>Um layout organizado começa pela estrutura</h1>
+        <p>Este exemplo usa CSS Grid para separar a área principal da barra lateral e Flexbox para alinhar os itens do
+            cabeçalho.</p>
+
+        <div class="feature-grid">
+            <article class="feature">
+                <h2>Cabeçalho</h2>
+                <p>Reúne identidade visual e navegação principal.</p>
+            </article>
+            <article class="feature">
+                <h2>Conteúdo</h2>
+                <p>Concentra o assunto mais importante da página.</p>
+            </article>
+            <article class="feature">
+                <h2>Barra lateral</h2>
+                <p>Apresenta informações complementares e atalhos.</p>
+            </article>
+            <article class="feature">
+                <h2>Rodapé</h2>
+                <p>Fecha a página com créditos e links secundários.</p>
+            </article>
+        </div>
+    </section>
+
+    <aside class="sidebar">
+        <h2>Nesta página</h2>
+        <ul>
+            <li><a href="#inicio">Estrutura</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <p class="tip">Reduza a largura da janela para observar a adaptação do layout.</p>
+    </aside>
+</main>
+
+<footer class="site-footer" id="contato">
+    <div class="container footer-row">
+        <p><strong>Projeto Layout</strong> — exercício de estrutura visual.</p>
+        <p>HTML5 + CSS3</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

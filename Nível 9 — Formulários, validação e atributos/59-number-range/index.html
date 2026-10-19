@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Use campos numéricos e controles deslizantes para limitar valores e facilitar a escolha dentro de uma faixa.">
+    <meta name="keywords" content="HTML, input, number, range, min, max, step">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Number e Range</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 59</span>
+        <h1>Number e Range</h1>
+        <p>Campos numéricos aceitam valores digitados; controles deslizantes facilitam a escolha dentro de uma faixa.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Reserva de materiais</h2>
+        <form action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="quantidade">Quantidade de kits</label>
+                <input id="quantidade" name="quantidade" type="number" min="1" max="10" step="1" value="1" required>
+                <p class="help">Escolha de 1 a 10 kits.</p>
+            </div>
+
+            <div class="field">
+                <label for="satisfacao">Nível de satisfação com o atendimento</label>
+                <input id="satisfacao" name="satisfacao" type="range" min="0" max="100" step="10" value="50">
+                <p class="range-value">Valor atual: <output id="valor-satisfacao" for="satisfacao">50</output>%</p>
+            </div>
+
+            <div class="field">
+                <label for="orcamento">Orçamento disponível (R$)</label>
+                <input id="orcamento" name="orcamento" type="number" min="0" max="5000" step="50" placeholder="Ex.: 1500">
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Enviar reserva</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Atributos de controle</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>min</code></td><td>Menor valor permitido.</td></tr>
+                    <tr><td><code>max</code></td><td>Maior valor permitido.</td></tr>
+                    <tr><td><code>step</code></td><td>Intervalo entre valores válidos.</td></tr>
+                    <tr><td><code>value</code></td><td>Valor inicial do campo.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 59</strong> — Number e Range</div>
+</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

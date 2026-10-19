@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Crie áreas de texto multilinha com controle de tamanho, limite de caracteres e redimensionamento.">
+    <meta name="keywords" content="HTML, textarea, formulário, multilinha, maxlength">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Textarea</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 55</span>
+        <h1>Textarea</h1>
+        <p>Áreas de texto são indicadas para mensagens, comentários e descrições longas.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Comentário sobre o curso</h2>
+        <form action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="comentario">Seu comentário</label>
+                <textarea id="comentario" name="comentario" rows="6" maxlength="300"
+                    placeholder="Conte o que você achou das aulas..." required></textarea>
+                <p class="help">Máximo de 300 caracteres. O navegador impede o excesso.</p>
+            </div>
+
+            <div class="field">
+                <label for="sugestao">Sugestão de melhoria</label>
+                <textarea id="sugestao" name="sugestao" rows="4" placeholder="Opcional"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="observacao">Observação somente leitura</label>
+                <textarea id="observacao" name="observacao" rows="3" readonly>Este texto pode ser copiado, mas não editado.</textarea>
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Enviar comentário</button>
+                <button class="btn btn-secondary" type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Diferença para input</h2>
+        <p>Enquanto <code>&lt;input type="text"&gt;</code> é uma linha, <code>&lt;textarea&gt;</code> permite várias
+            linhas. O conteúdo inicial fica entre as tags de abertura e fechamento.</p>
+        <pre><code>&lt;textarea name="mensagem" rows="5" cols="40"&gt;
+Texto inicial
+&lt;/textarea&gt;</code></pre>
+        <p>Use CSS com <code>resize: vertical</code> para permitir que o usuário aumente apenas a altura.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 55</strong> — Textarea</div>
+</footer>
+
+</body>
+
+</html>

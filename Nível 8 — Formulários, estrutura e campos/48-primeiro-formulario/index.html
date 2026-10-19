@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Crie um formulário de contato com campos de texto, e-mail e mensagem, associando cada campo ao seu rótulo.">
+    <meta name="keywords" content="HTML, formulário, form, input, label, textarea">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Primeiro formulário</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 48</span>
+        <h1>Primeiro formulário</h1>
+        <p>Formulários coletam dados do usuário. Comece com uma estrutura simples, acessível e fácil de validar.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Fale conosco</h2>
+        <p>Os campos abaixo usam rótulos associados, validação nativa e nomes que identificam cada dado enviado.</p>
+
+        <form action="#" method="post" class="form-grid">
+            <div class="field">
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" placeholder="Ex.: Maria da Silva" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+                <p class="help">Usaremos este endereço apenas para responder à mensagem.</p>
+            </div>
+
+            <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Enviar mensagem</button>
+                <button class="btn btn-secondary" type="reset">Limpar campos</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Anatomia do formulário</h2>
+        <pre><code>&lt;form action="#" method="post"&gt;
+    &lt;label for="email"&gt;E-mail&lt;/label&gt;
+    &lt;input id="email" name="email" type="email" required&gt;
+
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        <p>O <code>for</code> do rótulo deve apontar para o <code>id</code> do campo. O atributo <code>name</code> é o
+            nome do dado enviado ao servidor.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 48</strong> — Primeiro formulário</div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Compare uma página construída apenas com divs com a mesma página refatorada usando elementos semânticos.">
+    <meta name="keywords" content="HTML, refatoração, semântica, div, article, aside">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Refatoração semântica</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 40</span>
+        <h1>Refatoração semântica</h1>
+        <p>A mesma interface pode ser construída com divs ou com elementos semânticos. O resultado visual é parecido, mas a qualidade do código muda.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Versão refatorada</h2>
+        <p>Esta página usa <code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>,
+            <code>aside</code> e <code>footer</code>. Cada elemento comunica sua função.</p>
+        <div class="compare-grid">
+            <article class="compare-item good">
+                <h3>Depois: semântico</h3>
+                <pre><code>&lt;header&gt;...&lt;/header&gt;
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;main&gt;
+    &lt;article&gt;...&lt;/article&gt;
+    &lt;aside&gt;...&lt;/aside&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+                <p>Mais acessível, legível e fácil de manter.</p>
+            </article>
+            <article class="compare-item bad">
+                <h3>Antes: apenas divs</h3>
+                <pre><code>&lt;div class="topo"&gt;...&lt;/div&gt;
+&lt;div class="menu"&gt;...&lt;/div&gt;
+&lt;div class="conteudo"&gt;
+    &lt;div class="post"&gt;...&lt;/div&gt;
+    &lt;div class="lateral"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="rodape"&gt;...&lt;/div&gt;</code></pre>
+                <p>Funciona visualmente, mas não descreve o conteúdo.</p>
+            </article>
+        </div>
+        <p><a class="btn" href="antes.html">Abrir a versão com divs</a></p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 40</strong> — Refatoração semântica</div>
+</footer>
+
+</body>
+
+</html>

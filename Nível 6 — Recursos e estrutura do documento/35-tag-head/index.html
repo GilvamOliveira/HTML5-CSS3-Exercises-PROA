@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Conheça os metadados que ficam dentro de head e entenda como eles descrevem a página para navegadores e mecanismos de busca.">
+    <meta name="keywords" content="HTML, head, metadados, SEO, viewport, charset">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b5ed7">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Explorando a tag HEAD">
+    <meta property="og:description" content="Exemplo didático sobre metadados HTML.">
+    <meta property="og:locale" content="pt_BR">
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Explorando a tag HEAD</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 35</span>
+        <h1>Explorando a tag HEAD</h1>
+        <p>O conteúdo de <code>head</code> não aparece na página, mas informa ao navegador como interpretar e apresentar o documento.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Metadados em uso</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Para que serve</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+                        <td>Define a codificação de caracteres, permitindo acentos e símbolos.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta name="viewport"&gt;</code></td>
+                        <td>Ajusta a largura da página ao dispositivo usado.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta name="description"&gt;</code></td>
+                        <td>Resume o conteúdo para mecanismos de busca.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta name="theme-color"&gt;</code></td>
+                        <td>Sugere uma cor de interface para o navegador.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;title&gt;</code></td>
+                        <td>Define o título exibido na aba do navegador.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Veja o código</h2>
+        <p>Abra o código-fonte desta página e observe o bloco <code>&lt;head&gt;</code>. Ele reúne informações de
+            codificação, descrição, autoria, compartilhamento e ícone.</p>
+        <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Descrição da página"&gt;
+    &lt;meta name="author" content="Seu nome"&gt;
+    &lt;title&gt;Título da página&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+    </section>
+
+    <section class="card">
+        <h2>Boas práticas</h2>
+        <ul class="checklist">
+            <li>Use um <code>title</code> curto e específico.</li>
+            <li>Escreva uma <code>description</code> objetiva, com até 160 caracteres.</li>
+            <li>Mantenha o <code>charset</code> como primeira meta da página.</li>
+            <li>Inclua o <code>viewport</code> para permitir layouts responsivos.</li>
+            <li>Não repita palavras-chave em excesso no atributo <code>keywords</code>.</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 35</strong> — Explorando a tag HEAD</div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Projeto integrador: construa uma página completa de apresentação e inscrição em um curso, reunindo HTML semântico, CSS, formulários e JavaScript.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, projeto integrador, inscrição, curso, formulário">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Página completa de inscrição em curso</title>
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Página inicial do curso">
+            <img src="assets/img/logo.svg" alt="" width="44" height="44">
+            <span>Curso em Foco</span>
+        </a>
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="sobre">
+        <div class="container hero-grid">
+            <div>
+                <span class="eyebrow">Projeto integrador • Exercício 70</span>
+                <h1>Front-end na prática</h1>
+                <p>Aprenda HTML5, CSS3 e JavaScript construindo projetos reais, com acompanhamento e certificado de
+                    conclusão.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-light" href="#inscricao">Quero me inscrever</a>
+                    <a class="btn btn-outline-light" href="#conteudo">Ver conteúdo</a>
+                </div>
+                <ul class="hero-stats" aria-label="Informações do curso">
+                    <li><strong>40h</strong><span>Carga horária</span></li>
+                    <li><strong>12</strong><span>Módulos</span></li>
+                    <li><strong>100%</strong><span>Prática</span></li>
+                </ul>
+            </div>
+            <img src="assets/img/banner.svg" alt="Ilustração de uma pessoa estudando desenvolvimento web" width="520" height="360">
+        </div>
+    </section>
+
+    <section class="container section" id="conteudo">
+        <div class="section-head">
+            <h2>O que você vai aprender</h2>
+            <p>Uma trilha progressiva, do primeiro documento HTML ao projeto final.</p>
+        </div>
+
+        <div class="info-grid">
+            <article class="info-card">
+                <span class="icon" aria-hidden="true">01</span>
+                <h3>HTML semântico</h3>
+                <p>Estrutura, acessibilidade, formulários e boas práticas de marcação.</p>
+            </article>
+            <article class="info-card">
+                <span class="icon" aria-hidden="true">02</span>
+                <h3>CSS moderno</h3>
+                <p>Cores, tipografia, box model, Flexbox, Grid e responsividade.</p>
+            </article>
+            <article class="info-card">
+                <span class="icon" aria-hidden="true">03</span>
+                <h3>JavaScript</h3>
+                <p>Variáveis, funções, DOM e eventos para criar interações.</p>
+            </article>
+            <article class="info-card">
+                <span class="icon" aria-hidden="true">04</span>
+                <h3>Projeto final</h3>
+                <p>Uma página completa publicada no GitHub Pages para o seu portfólio.</p>
+            </article>
+        </div>
+
+        <div class="curriculum">
+            <article>
+                <h3>Módulos principais</h3>
+                <ol>
+                    <li>Introdução ao desenvolvimento web</li>
+                    <li>Estrutura e semântica do HTML5</li>
+                    <li>Links, imagens e navegação</li>
+                    <li>Listas, tabelas e formulários</li>
+                    <li>Fundamentos e layout com CSS3</li>
+                    <li>Responsividade e acessibilidade</li>
+                    <li>Introdução ao JavaScript</li>
+                    <li>Projeto integrador e publicação</li>
+                </ol>
+            </article>
+            <aside class="teacher-card">
+                <h3>Quem conduz</h3>
+                <p><strong>Equipe Curso em Foco</strong></p>
+                <p>Professores e profissionais de front-end com experiência em projetos web e educação técnica.</p>
+                <p class="teacher-note">Turmas pequenas, atividades práticas e feedback individual.</p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="enrollment" id="inscricao">
+        <div class="container enrollment-grid">
+            <div>
+                <span class="eyebrow">Inscrição</span>
+                <h2>Garanta sua vaga</h2>
+                <p>Preencha os dados abaixo. Este é um formulário demonstrativo: nenhuma informação é enviada para um
+                    servidor.</p>
+                <ul class="check-list">
+                    <li>Aulas ao vivo e gravadas</li>
+                    <li>Material de apoio em PDF</li>
+                    <li>Certificado de conclusão</li>
+                    <li>Acesso ao projeto final</li>
+                </ul>
+            </div>
+
+            <form class="enrollment-form" id="form-inscricao" action="#" method="post" novalidate>
+                <div class="field">
+                    <label for="nome-inscricao">Nome completo *</label>
+                    <input id="nome-inscricao" name="nome" type="text" autocomplete="name" required>
+                    <span class="error" data-error-for="nome-inscricao"></span>
+                </div>
+
+                <div class="field">
+                    <label for="email-inscricao">E-mail *</label>
+                    <input id="email-inscricao" name="email" type="email" autocomplete="email" required>
+                    <span class="error" data-error-for="email-inscricao"></span>
+                </div>
+
+                <div class="field">
+                    <label for="telefone-inscricao">Telefone</label>
+                    <input id="telefone-inscricao" name="telefone" type="tel" autocomplete="tel" placeholder="(11) 91234-5678">
+                </div>
+
+                <div class="field">
+                    <label for="curso-inscricao">Curso *</label>
+                    <select id="curso-inscricao" name="curso" required>
+                        <option value="">Selecione</option>
+                        <option value="frontend">Front-end completo</option>
+                        <option value="html-css">HTML5 e CSS3</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                    <span class="error" data-error-for="curso-inscricao"></span>
+                </div>
+
+                <div class="field">
+                    <label for="turno-inscricao">Turno *</label>
+                    <select id="turno-inscricao" name="turno" required>
+                        <option value="">Selecione</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                    <span class="error" data-error-for="turno-inscricao"></span>
+                </div>
+
+                <div class="field">
+                    <label for="experiencia">Experiência anterior</label>
+                    <select id="experiencia" name="experiencia">
+                        <option value="nenhuma">Nenhuma</option>
+                        <option value="basica">Básica</option>
+                        <option value="intermediaria">Intermediária</option>
+                        <option value="avancada">Avançada</option>
+                    </select>
+                </div>
+
+                <div class="field checkbox-field">
+                    <label>
+                        <input type="checkbox" name="termos" required>
+                        <span>Li e aceito os termos de inscrição. *</span>
+                    </label>
+                    <span class="error" data-error-for="termos"></span>
+                </div>
+
+                <button class="btn btn-submit" type="submit">Confirmar inscrição</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-row">
+        <div>
+            <strong>Curso em Foco</strong>
+            <p>Projeto integrador do exercício 70 — HTML5, CSS3 e JavaScript.</p>
+        </div>
+        <div>
+            <p>HTML5 • CSS3 • JavaScript</p>
+            <p>Feito para estudo e portfólio.</p>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

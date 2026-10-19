@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Use caixas de seleção para permitir múltiplas escolhas independentes em um formulário.">
+    <meta name="keywords" content="HTML, checkbox, formulário, múltipla escolha, acessibilidade">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Checkbox</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 53</span>
+        <h1>Checkbox</h1>
+        <p>Caixas de seleção permitem escolher nenhuma, uma ou várias opções ao mesmo tempo.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Áreas de interesse</h2>
+        <form action="#" method="post" class="form-grid">
+            <fieldset>
+                <legend>O que você quer estudar?</legend>
+                <div class="option-list">
+                    <label class="option">
+                        <input type="checkbox" name="interesses" value="html" checked>
+                        <span>
+                            <strong>HTML5</strong>
+                            <small>Estrutura e semântica</small>
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="interesses" value="css" checked>
+                        <span>
+                            <strong>CSS3</strong>
+                            <small>Estilos, layout e responsividade</small>
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="interesses" value="javascript">
+                        <span>
+                            <strong>JavaScript</strong>
+                            <small>Interatividade e lógica</small>
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="interesses" value="design">
+                        <span>
+                            <strong>Design de interfaces</strong>
+                            <small>Usabilidade e composição visual</small>
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="interesses" value="banco-dados" disabled>
+                        <span>
+                            <strong>Banco de dados</strong>
+                            <small>Disponível em breve</small>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+                <div class="option-list">
+                    <label class="option">
+                        <input type="checkbox" name="newsletter" value="sim" checked>
+                        <span>Quero receber novidades por e-mail.</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="termos" value="aceito" required>
+                        <span>Li e aceito os termos de uso. <span class="required">*</span></span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button class="btn" type="submit">Salvar preferências</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Checkbox x radio</h2>
+        <p>Use <strong>checkbox</strong> para escolhas independentes e múltiplas. Use <strong>radio</strong> quando
+            apenas uma opção puder ser escolhida.</p>
+        <p>Para que vários checkboxes enviem valores diferentes, todos podem compartilhar o mesmo <code>name</code>,
+            mas cada um deve ter seu próprio <code>value</code>.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 53</strong> — Checkbox</div>
+</footer>
+
+</body>
+
+</html>

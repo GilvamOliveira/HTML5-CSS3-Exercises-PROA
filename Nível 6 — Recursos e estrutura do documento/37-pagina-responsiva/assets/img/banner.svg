@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-labelledby="titulo">
+  <title id="titulo">Ilustração de dispositivos conectados</title>
+  <defs>
+    <linearGradient id="tela" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="280" rx="24" fill="rgba(255,255,255,.08)"/>
+  <rect x="34" y="52" width="236" height="150" rx="12" fill="url(#tela)" opacity=".96"/>
+  <rect x="48" y="70" width="90" height="10" rx="5" fill="#0b5ed7"/>
+  <rect x="48" y="92" width="180" height="8" rx="4" fill="#9db7d5"/>
+  <rect x="48" y="110" width="150" height="8" rx="4" fill="#9db7d5"/>
+  <rect x="48" y="144" width="62" height="34" rx="8" fill="#0b5ed7" opacity=".8"/>
+  <rect x="122" y="144" width="62" height="34" rx="8" fill="#60a5fa" opacity=".8"/>
+  <rect x="288" y="92" width="92" height="154" rx="18" fill="#ffffff" opacity=".96"/>
+  <rect x="300" y="112" width="68" height="8" rx="4" fill="#0b5ed7"/>
+  <rect x="300" y="130" width="52" height="6" rx="3" fill="#9db7d5"/>
+  <rect x="300" y="158" width="68" height="44" rx="8" fill="#eaf2ff"/>
+  <circle cx="334" cy="230" r="6" fill="#0b5ed7"/>
+</svg>

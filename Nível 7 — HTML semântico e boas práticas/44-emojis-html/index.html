@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Adicione emojis a cards e textos usando caracteres Unicode, com atenção à codificação UTF-8 e ao contexto.">
+    <meta name="keywords" content="HTML, emojis, Unicode, UTF-8, acessibilidade">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Emojis em HTML</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 44</span>
+        <h1>Emojis em HTML</h1>
+        <p>Emojis são caracteres Unicode. Com a codificação correta, podem ser usados diretamente no HTML.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Cartões com emojis</h2>
+        <div class="emoji-grid">
+            <article class="emoji-card">
+                <span class="emoji" aria-hidden="true">😀</span>
+                <h3>Sorriso</h3>
+                <code>U+1F600</code>
+            </article>
+            <article class="emoji-card">
+                <span class="emoji" aria-hidden="true">🚀</span>
+                <h3>Foguete</h3>
+                <code>U+1F680</code>
+            </article>
+            <article class="emoji-card">
+                <span class="emoji" aria-hidden="true">💻</span>
+                <h3>Computador</h3>
+                <code>U+1F4BB</code>
+            </article>
+            <article class="emoji-card">
+                <span class="emoji" aria-hidden="true">📚</span>
+                <h3>Livros</h3>
+                <code>U+1F4DA</code>
+            </article>
+            <article class="emoji-card">
+                <span class="emoji" aria-hidden="true">✅</span>
+                <h3>Concluído</h3>
+                <code>U+2705</code>
+            </article>
+            <article class="emoji-card">
+                <span class="emoji" aria-hidden="true">💡</span>
+                <h3>Ideia</h3>
+                <code>U+1F4A1</code>
+            </article>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Como usar no texto</h2>
+        <p>Parabéns! Você concluiu a atividade. 🎉</p>
+        <p>Próxima etapa: revisar o código e testar em outro navegador. 🔎</p>
+        <pre><code>&lt;p&gt;Parabéns! Você concluiu a atividade. 🎉&lt;/p&gt;</code></pre>
+    </section>
+
+    <section class="card">
+        <h2>Cuidados</h2>
+        <ul>
+            <li>Use emojis com moderação em interfaces profissionais.</li>
+            <li>Não substitua informações importantes apenas por emojis.</li>
+            <li>Marque emojis decorativos com <code>aria-hidden="true"</code> quando houver texto equivalente.</li>
+            <li>Teste em diferentes sistemas: o desenho pode variar.</li>
+        </ul>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 44</strong> — Emojis em HTML</div>
+</footer>
+
+</body>
+
+</html>

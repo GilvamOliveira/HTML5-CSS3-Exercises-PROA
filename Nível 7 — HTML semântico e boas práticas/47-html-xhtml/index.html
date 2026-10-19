@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Compare as principais diferenças entre HTML5 e XHTML em uma tabela e em exemplos de marcação.">
+    <meta name="keywords" content="HTML, XHTML, HTML5, sintaxe, doctype">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>HTML versus XHTML</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 47</span>
+        <h1>HTML versus XHTML</h1>
+        <p>HTML5 é tolerante; XHTML exige uma sintaxe mais rígida, baseada em XML.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Comparação</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>HTML5</th>
+                        <th>XHTML</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DOCTYPE</td>
+                        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                        <td>Declaração XML + DTD</td>
+                    </tr>
+                    <tr>
+                        <td>Tags vazias</td>
+                        <td>Aceita <code>&lt;br&gt;</code></td>
+                        <td>Exige <code>&lt;br /&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Maiúsculas</td>
+                        <td>Tags podem ser maiúsculas ou minúsculas</td>
+                        <td>Diferencia maiúsculas de minúsculas</td>
+                    </tr>
+                    <tr>
+                        <td>Atributos</td>
+                        <td>Aspas são recomendadas</td>
+                        <td>Aspas são obrigatórias</td>
+                    </tr>
+                    <tr>
+                        <td>Erros</td>
+                        <td>O navegador tenta corrigir</td>
+                        <td>A página pode falhar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Exemplos lado a lado</h2>
+        <div class="compare-grid">
+            <article>
+                <h3>HTML5</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Exemplo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="foto.jpg" alt="Foto"&gt;
+    &lt;br&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </article>
+            <article>
+                <h3>XHTML</h3>
+                <pre><code>&lt;!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Exemplo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="foto.jpg" alt="Foto" /&gt;
+    &lt;br /&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </article>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Qual usar?</h2>
+        <p>Para projetos novos na web, HTML5 é o padrão recomendado. XHTML ainda aparece em sistemas antigos e em
+            contextos que exigem XML. O importante é conhecer as regras da linguagem escolhida e manter a consistência.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 47</strong> — HTML versus XHTML</div>
+</footer>
+
+</body>
+
+</html>

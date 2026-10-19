@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Monte um formulário de cadastro com dados pessoais, senha, data de nascimento, seleção de gênero e aceite dos termos.">
+    <meta name="keywords" content="HTML, formulário, cadastro, senha, data, radio, checkbox">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 49</span>
+        <h1>Formulário de cadastro</h1>
+        <p>Um cadastro reúne diferentes tipos de dados e precisa equilibrar completude, clareza e privacidade.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Crie sua conta</h2>
+        <p>Campos com <span class="required">*</span> são obrigatórios.</p>
+
+        <form action="#" method="post" class="form-grid two-columns">
+            <div class="field">
+                <label for="nome-completo">Nome completo <span class="required">*</span></label>
+                <input id="nome-completo" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+            </div>
+
+            <div class="field">
+                <label for="email-cadastro">E-mail <span class="required">*</span></label>
+                <input id="email-cadastro" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+            </div>
+
+            <div class="field">
+                <label for="senha">Senha <span class="required">*</span></label>
+                <input id="senha" name="senha" type="password" autocomplete="new-password" minlength="8" placeholder="Mínimo de 8 caracteres" required>
+                <p class="help">Use letras, números e símbolos.</p>
+            </div>
+
+            <div class="field">
+                <label for="confirmar-senha">Confirmar senha <span class="required">*</span></label>
+                <input id="confirmar-senha" name="confirmar_senha" type="password" autocomplete="new-password" minlength="8" placeholder="Repita a senha" required>
+            </div>
+
+            <div class="field">
+                <label for="nascimento">Data de nascimento</label>
+                <input id="nascimento" name="nascimento" type="date" autocomplete="bday">
+            </div>
+
+            <div class="field">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(11) 91234-5678">
+            </div>
+
+            <fieldset class="full-width">
+                <legend>Como você se identifica?</legend>
+                <div class="option-list">
+                    <label class="option">
+                        <input type="radio" name="genero" value="feminino">
+                        <span>Feminino</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="genero" value="masculino">
+                        <span>Masculino</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="genero" value="outro">
+                        <span>Outro</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="genero" value="prefiro-nao-informar">
+                        <span>Prefiro não informar</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="field full-width">
+                <label class="option">
+                    <input type="checkbox" name="termos" value="aceito" required>
+                    <span>Li e aceito os termos de uso e a política de privacidade. <span class="required">*</span></span>
+                </label>
+            </div>
+
+            <div class="actions full-width">
+                <button class="btn" type="submit">Criar conta</button>
+                <button class="btn btn-secondary" type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 49</strong> — Formulário de cadastro</div>
+</footer>
+
+</body>
+
+</html>

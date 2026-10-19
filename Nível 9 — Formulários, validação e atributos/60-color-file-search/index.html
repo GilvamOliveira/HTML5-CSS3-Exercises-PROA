@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Pratique campos de seleção de cor, envio de arquivos e busca com interfaces nativas e atributos específicos.">
+    <meta name="keywords" content="HTML, input, color, file, search, accept, multiple">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Color, File e Search</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 60</span>
+        <h1>Color, File e Search</h1>
+        <p>Cada tipo de campo possui comportamentos e atributos próprios que melhoram a experiência de preenchimento.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Personalização do perfil</h2>
+        <form action="#" method="post" enctype="multipart/form-data" class="form-grid">
+            <div class="field">
+                <label for="cor-perfil">Cor preferida</label>
+                <input id="cor-perfil" name="cor" type="color" value="#0b5ed7">
+                <p class="help">O navegador abre um seletor de cores nativo.</p>
+            </div>
+
+            <div class="field">
+                <label for="foto">Foto de perfil</label>
+                <input id="foto" name="foto" type="file" accept="image/png, image/jpeg, image/webp">
+                <p class="help">Aceita arquivos PNG, JPEG ou WebP.</p>
+            </div>
+
+            <div class="field">
+                <label for="documentos">Documentos</label>
+                <input id="documentos" name="documentos" type="file" accept=".pdf,.doc,.docx" multiple>
+                <p class="help">Use <kbd>Ctrl</kbd> ou <kbd>Command</kbd> para selecionar mais de um arquivo.</p>
+            </div>
+
+            <div class="field">
+                <label for="busca-perfil">Buscar conteúdo</label>
+                <input id="busca-perfil" name="busca" type="search" placeholder="Digite um termo">
+            </div>
+
+            <div class="actions">
+                <button class="btn" type="submit">Salvar perfil</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Atributos dos arquivos</h2>
+        <ul>
+            <li><code>accept</code> define os formatos sugeridos ou aceitos.</li>
+            <li><code>multiple</code> permite selecionar vários arquivos.</li>
+            <li><code>capture</code> pode abrir a câmera em dispositivos compatíveis.</li>
+            <li>O envio de arquivos exige <code>enctype="multipart/form-data"</code> no formulário.</li>
+        </ul>
+        <p class="note"><strong>Importante:</strong> a validação do tipo de arquivo no navegador é apenas uma ajuda. O
+            servidor também precisa validar extensão, tamanho e conteúdo.</p>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 60</strong> — Color, File e Search</div>
+</footer>
+
+</body>
+
+</html>

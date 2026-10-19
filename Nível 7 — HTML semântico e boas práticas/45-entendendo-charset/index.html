@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Compreenda por que a declaração charset é essencial para exibir acentos e símbolos corretamente.">
+    <meta name="keywords" content="HTML, charset, UTF-8, codificação, acentos">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Entendendo Charset</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 45</span>
+        <h1>Entendendo Charset</h1>
+        <p>Charset define como os bytes do arquivo são convertidos em caracteres. Sem a declaração correta, letras acentuadas podem aparecer quebradas.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Declaração correta</h2>
+        <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Página com acentos&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+        <p>UTF-8 é a codificação recomendada para a web. Ela representa praticamente todos os caracteres usados no
+            mundo.</p>
+    </section>
+
+    <section class="card">
+        <h2>Texto com acentos</h2>
+        <p class="sample">Ação, coração, pão, maçã, você, avô, língua, programação e informação.</p>
+        <p>Se o arquivo for salvo em UTF-8 e a página declarar UTF-8, esses caracteres são exibidos corretamente.</p>
+    </section>
+
+    <section class="card">
+        <h2>Quando dá errado</h2>
+        <p>Sem a declaração correta, o navegador pode interpretar os bytes com outra tabela e mostrar algo como:</p>
+        <p class="broken">AÃ§Ã£o, coraÃ§Ã£o, pÃ£o, maÃ§Ã£, vocÃª.</p>
+        <p>Esse fenômeno é conhecido como <strong>mojibake</strong>. A solução é salvar o arquivo e declará-lo com a
+            mesma codificação.</p>
+    </section>
+
+    <section class="card">
+        <h2>Resumo</h2>
+        <ul>
+            <li><code>charset</code> deve aparecer no início do <code>head</code>.</li>
+            <li>UTF-8 evita a maior parte dos problemas.</li>
+            <li>O editor de código também precisa salvar em UTF-8.</li>
+            <li>Bancos de dados e servidores devem usar a mesma codificação.</li>
+        </ul>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 45</strong> — Entendendo Charset</div>
+</footer>
+
+</body>
+
+</html>

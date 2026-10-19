@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre a página -->
+    <meta name="description" content="Use botões de rádio para permitir uma única escolha dentro de um grupo de opções relacionadas.">
+    <meta name="keywords" content="HTML, radio, input, formulário, acessibilidade">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <title>Radio Buttons</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 52</span>
+        <h1>Radio Buttons</h1>
+        <p>Botões de rádio são indicados quando o usuário deve escolher apenas uma opção entre várias.</p>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Escolha seu plano</h2>
+        <form action="#" method="post" class="form-grid">
+            <fieldset>
+                <legend>Plano de estudos</legend>
+                <div class="option-list">
+                    <label class="option">
+                        <input type="radio" name="plano" value="mensal" checked>
+                        <span>
+                            <strong>Mensal</strong>
+                            <small>R$ 49,90 por mês</small>
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="plano" value="trimestral">
+                        <span>
+                            <strong>Trimestral</strong>
+                            <small>R$ 129,90 a cada três meses</small>
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="plano" value="anual">
+                        <span>
+                            <strong>Anual</strong>
+                            <small>R$ 449,90 por ano</small>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de pagamento</legend>
+                <div class="option-list">
+                    <label class="option">
+                        <input type="radio" name="pagamento" value="pix">
+                        <span>Pix</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pagamento" value="cartao">
+                        <span>Cartão de crédito</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="pagamento" value="boleto" disabled>
+                        <span>Boleto <small>(indisponível no momento)</small></span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button class="btn" type="submit">Confirmar escolha</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Regra principal</h2>
+        <p>Opções do mesmo grupo compartilham o mesmo <code>name</code>. Apenas uma pode ficar selecionada. O atributo
+            <code>value</code> define o dado enviado.</p>
+        <pre><code>&lt;label&gt;
+    &lt;input type="radio" name="plano" value="anual"&gt;
+    Plano anual
+&lt;/label&gt;</code></pre>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 52</strong> — Radio Buttons</div>
+</footer>
+
+</body>
+
+</html>
