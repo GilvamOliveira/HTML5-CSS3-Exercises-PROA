@@ -13,7 +13,7 @@
   margin: 0 auto;
   padding: 0 1.25rem;
   display: grid;
-  grid-template-columns: auto minmax(220px, 1fr) auto;
+  grid-template-columns: auto auto minmax(220px, 1fr) auto;
   align-items: center;
   gap: .75rem;
 }
@@ -83,7 +83,7 @@
 
 @media (max-width: 640px) {
   .exercise-nav-inner {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .exercise-nav-select {
@@ -98,5 +98,12 @@
   .exercise-nav-btn {
     padding: .55rem .65rem;
     font-size: .82rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .exercise-nav-btn {
+    padding: .5rem .35rem;
+    font-size: .78rem;
   }
 }

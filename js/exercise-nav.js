@@ -484,6 +484,12 @@
   var inner = document.createElement('div');
   inner.className = 'exercise-nav-inner';
 
+  var indexLink = document.createElement('a');
+  indexLink.className = 'exercise-nav-btn exercise-nav-index';
+  indexLink.href = rootUrl.href;
+  indexLink.textContent = '\u00cdndice';
+  indexLink.setAttribute('aria-label', 'Ir para o \u00edndice de exerc\u00edcios');
+
   var previous = makeButton(currentIndex - 1, 'previous');
   var next = makeButton(currentIndex + 1, 'next');
 
@@ -511,6 +517,7 @@
   });
 
   label.appendChild(select);
+  inner.appendChild(indexLink);
   inner.appendChild(previous);
   inner.appendChild(label);
   inner.appendChild(next);
