@@ -127,6 +127,16 @@ Acesse a versão publicada no GitHub Pages: [HTML5-CSS3-Exercises-PROA](https://
 2. Abra o arquivo HTML indicado no README daquela pasta em um navegador moderno.
 3. Quando houver mais de uma página, comece por `index.html`.
 
+## Validação
+
+O repositório inclui uma verificação automática executada no GitHub Actions e pode ser rodada localmente com Node.js:
+
+```bash
+node tools/validate.js
+```
+
+A verificação confere links e recursos locais, estrutura da navegação, metadados das páginas e consistência dos READMEs.
+
 ## Destaques de aprendizado
 
 - Estrutura e semântica do HTML5
