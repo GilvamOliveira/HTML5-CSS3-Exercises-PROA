@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estruturar uma página com cabeçalho, menu, conteúdo principal, barra lateral e rodapé.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 17, organizando a página com div">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Organizando a página com DIV</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 17</span>
+        <h1>Organizando a página com DIV</h1>
+        <p>Estruturar uma página com cabeçalho, menu, conteúdo principal, barra lateral e rodapé.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<!-- 1ª div: cabeçalho -->
+    <div class="cabecalho">
+        <h2 class="demo-title">Meu Site</h2>
+    </div>
+
+    <!-- 2ª div: menu -->
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <!-- Wrapper que organiza as duas áreas de conteúdo lado a lado -->
+    <div class="conteudo-wrapper">
+
+        <!-- 3ª div: conteúdo principal -->
+        <div class="conteudo-principal">
+            <h2>Conteúdo Principal</h2>
+            <p>Esta é a área principal da página, onde fica o conteúdo
+                mais importante, como o texto de um artigo ou a
+                descrição de um produto.</p>
+        </div>
+
+        <!-- 4ª div: conteúdo lateral (desafio) -->
+        <div class="conteudo-lateral">
+            <h2>Conteúdo Lateral</h2>
+            <p>Esta segunda área fica ao lado da principal, geralmente
+                usada para links relacionados, propaganda ou um menu
+                secundário.</p>
+        </div>
+
+    </div>
+
+    <!-- 5ª div: rodapé -->
+    <div class="rodape">
+        <p>&copy; 2026 - Meu Site. Todos os direitos reservados.</p>
+    </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 17</strong> — Organizando a página com DIV</div>
+</footer>
+</body>
+
+</html>

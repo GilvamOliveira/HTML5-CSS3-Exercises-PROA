@@ -11,9 +11,10 @@ Comparar elementos que ocupam blocos da página com aqueles que fluem dentro do 
 
 ## Estrutura
 
-`block-inline.html` — demonstração visual
-- `assets/css/style.css` — folha de estilos vinculada
-- `assets/img/block-inline.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Comportamento padrão de `div`, `p` e títulos; elementos inline como `span`, `s
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

@@ -2,26 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
-    <meta name="description" content="Seletores CSS">
-    <meta name="keywords" content="CSS, elementos, tags">
+    <meta name="description" content="Explorar seletores de elemento, classe, ID, agrupamento e descendência.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 25, laboratório de seletores css">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
-    <link rel="icon" href="assets/img/conta-gotas.png" type="image/x-icon">
-
-    <title>Laboratório de Seletores CSS</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Laboratório de seletores CSS</title>
 </head>
 
 <body>
-    <h1>Laboratório de Seletores</h1>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 25</span>
+        <h1>Laboratório de seletores CSS</h1>
+        <p>Explorar seletores de elemento, classe, ID, agrupamento e descendência.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<h2 class="demo-title">Laboratório de Seletores</h2>
     <h2 class="destaque">Subtítulo com classe "destaque"</h2>
 
     <p>Parágrafo comum, estilizado pelo seletor de elemento (p).</p>
@@ -37,6 +40,13 @@
         <p>Este parágrafo está DENTRO de uma div com classe "card",
             por isso é afetado pelo seletor descendente <code>.card p</code>.</p>
     </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 25</strong> — Laboratório de seletores CSS</div>
+</footer>
 </body>
 
 </html>

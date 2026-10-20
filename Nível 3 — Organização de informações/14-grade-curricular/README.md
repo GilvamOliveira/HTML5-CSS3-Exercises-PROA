@@ -11,9 +11,10 @@ Representar uma grade semanal de aulas em formato tabular.
 
 ## Estrutura
 
-`grade.html` — tabela da grade
-- `assets/css/style.css` — folha de estilos vinculada
-- `assets/img/tabela.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Tabelas com `table`, `tr`, `th` e `td`; cabeçalhos de coluna; organização de 
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

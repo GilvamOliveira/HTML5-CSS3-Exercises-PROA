@@ -11,9 +11,10 @@ Explorar seletores de elemento, classe, ID, agrupamento e descendência.
 
 ## Estrutura
 
-`index.html` — laboratório de seletores
-- `assets/css/style.css` — regras CSS
-- `assets/img/conta-gotas.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Seletores `p`, `.classe` e `#id`; agrupamento `h1, h2`; seletor descendente `.ca
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

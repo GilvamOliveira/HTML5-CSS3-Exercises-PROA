@@ -2,35 +2,68 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
-    <meta name="description" content="Estudo de navegação entre páginas no HTML">
-    <meta name="keywords" content="HTML, navegação, tags">
+    <meta name="description" content="Criar um pequeno site multipágina com navegação consistente entre início, sobre e contato.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 11, navegação entre páginas">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
-    <link rel="icon" href="assets/img/navegador-de-internet.png" type="image/x-icon">
-
-    <title>Início - Meu Site</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Navegação entre páginas</title>
 </head>
 
 <body>
-    <img src="assets/img/Logo site.jpg" alt="Logo do site" width="150" height="100">
-    <nav>
-        <a href="index.html">Início</a> |
-        <a href="pages/sobre.html">Sobre</a> |
-        <a href="pages/contato.html">Contato</a>
-    </nav>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 11</span>
+        <h1>Navegação entre páginas</h1>
+        <p>Criar um pequeno site multipágina com navegação consistente entre início, sobre e contato.</p>
+    </div>
+</header>
 
-    <h1>Página Inicial</h1>
-    <p>Bem-vindo(a) ao meu pequeno site de exemplo, criado para praticar
-        navegação entre páginas usando caminhos relativos.</p>
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+            <nav class="site-nav" aria-label="Navegação principal">
+                <a class="brand" href="index.html">
+                    <img src="assets/img/Logo site.jpg" alt="Logo do site">
+                    <span>Meu Site</span>
+                </a>
+                <div class="site-nav-links">
+                    <a href="index.html" aria-current="page">Início</a>
+                    <a href="pages/sobre.html">Sobre</a>
+                    <a href="pages/contato.html">Contato</a>
+                </div>
+            </nav>
+
+            <h2 class="demo-title">Página inicial</h2>
+            <p>Bem-vindo(a) ao meu pequeno site de exemplo, criado para praticar
+                navegação entre páginas usando caminhos relativos.</p>
+            <p>Cada página compartilha o mesmo menu. Na página inicial, os links
+                para as páginas internas começam com <code>pages/</code>; dentro
+                da pasta <code>pages/</code>, os caminhos usam <code>../</code>
+                para voltar ao arquivo principal e aos recursos.</p>
+
+            <div class="page-links">
+                <a class="page-link" href="pages/sobre.html">
+                    <strong>Sobre</strong>
+                    <span>Conheça a página interna e veja como os caminhos relativos funcionam.</span>
+                </a>
+                <a class="page-link" href="pages/contato.html">
+                    <strong>Contato</strong>
+                    <span>Acesse os canais de contato do site de exemplo.</span>
+                </a>
+            </div>
+
+            <p class="note">O mesmo arquivo <code>assets/css/style.css</code> é
+                reutilizado pelas três páginas, mantendo a identidade visual do site.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 11</strong> — Navegação entre páginas</div>
+</footer>
 </body>
 
 </html>

@@ -2,26 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
-    <meta name="description" content="Primeira página HTML">
-    <meta name="keywords" content="HTML, Página">
+    <meta name="description" content="Construir uma primeira página HTML apresentando o autor e os elementos estruturais essenciais de um documento web.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 1, minha primeira página html">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
-    <link rel="icon" href="assets/img/primeira pagina.png" type="image/x-icon">
-
-    <title>Minha Primeira Página - HTML</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Minha primeira página HTML</title>
 </head>
 
 <body>
-    <h1>Bem-vindo(a) à minha página!</h1>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 01</span>
+        <h1>Minha primeira página HTML</h1>
+        <p>Construir uma primeira página HTML apresentando o autor e os elementos estruturais essenciais de um documento web.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<h2 class="demo-title">Bem-vindo(a) à minha página!</h2>
 
     <p>
         Olá! Meu nome é Gilvam Júnior Teixeira de Oliveira e esta é a minha primeira página
@@ -35,6 +38,13 @@
         aprendendo mais sobre desenvolvimento web nas próximas aulas.
         Este é apenas o começo da minha jornada como programador(a)!
     </p>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 01</strong> — Minha primeira página HTML</div>
+</footer>
 </body>
 
 </html>

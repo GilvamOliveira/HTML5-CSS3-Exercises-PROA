@@ -11,9 +11,10 @@ Reunir links úteis para estudantes de tecnologia e aplicar uma imagem como elem
 
 ## Estrutura
 
-`links.html` — lista de recursos
-- `assets/css/style.css` — folha de estilos vinculada
-- `assets/img/W3Schools_logo.webp` e `hiperlink.png` — imagens
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Reunir links úteis para estudantes de tecnologia e aplicar uma imagem como elem
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

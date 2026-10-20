@@ -11,10 +11,10 @@ Comparar as três formas de aplicar CSS em uma página: externo, interno e inlin
 
 ## Estrutura
 
-`index.html` — demonstração das abordagens
-- `style.css` — folha externa em uso
-- `assets/css/style.css` — cópia de apoio
-- `assets/img/css.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -26,5 +26,5 @@ CSS externo com `link`; CSS interno com `style`; CSS inline; seletores de elemen
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

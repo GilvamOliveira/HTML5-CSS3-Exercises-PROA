@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Usar identificadores únicos para criar navegação interna entre seções da mesma página.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 19, identificando elementos com id">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Identificando elementos com ID</title>
+</head>
+
+<body id="topo">
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 19</span>
+        <h1>Identificando elementos com ID</h1>
+        <p>Usar identificadores únicos para criar navegação interna entre seções da mesma página.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<!-- Menu no topo: cada link aponta para o ID de uma seção -->
+    <nav class="menu">
+        <a href="#secao1">Seção 1</a>
+        <a href="#secao2">Seção 2</a>
+        <a href="#secao3">Seção 3</a>
+        <a href="#secao4">Seção 4</a>
+    </nav>
+
+    <section id="secao1">
+        <h2>Seção 1 — Introdução</h2>
+        <p>Cada seção desta página possui um <code>id</code> único e
+            exclusivo. Diferente de uma <code>class</code>, que pode se
+            repetir em vários elementos, um <code>id</code> só pode
+            existir uma vez em toda a página HTML.</p>
+        <p>É justamente por ser único que o <code>id</code> pode ser
+            usado como destino de um link âncora, como os do menu
+            acima.</p>
+        <a href="#topo" class="voltar-topo">Voltar ao topo</a>
+    </section>
+
+    <section id="secao2">
+        <h2>Seção 2 — Desenvolvimento</h2>
+        <p>Ao clicar em "Seção 2" no menu, o navegador rola
+            automaticamente até este trecho da página, pois o link usa
+            <code>href="#secao2"</code>, que aponta para
+            <code>id="secao2"</code> desta seção.
+        </p>
+        <a href="#topo" class="voltar-topo">Voltar ao topo</a>
+    </section>
+
+    <section id="secao3">
+        <h2>Seção 3 — Aplicações</h2>
+        <p>Os ids também são muito usados em CSS e JavaScript quando
+            queremos selecionar e estilizar (ou manipular) um único
+            elemento específico da página, sem afetar outros.</p>
+        <a href="#topo" class="voltar-topo">Voltar ao topo</a>
+    </section>
+
+    <section id="secao4">
+        <h2>Seção 4 — Conclusão</h2>
+        <p>Resumindo: use <code>class</code> quando quiser reaproveitar
+            um estilo em vários elementos, e use <code>id</code> quando
+            precisar identificar um elemento único — como um destino de
+            navegação interna ou um alvo específico de script.</p>
+        <a href="#topo" class="voltar-topo">Voltar ao topo</a>
+    </section>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 19</strong> — Identificando elementos com ID</div>
+</footer>
+</body>
+
+</html>

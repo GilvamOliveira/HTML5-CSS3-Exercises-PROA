@@ -11,10 +11,12 @@ Identificar erros comuns de sintaxe e comparar uma folha de estilos incorreta co
 
 ## Estrutura
 
-`pagina.html` — página de teste
-- `assets/css/style-com-erros.css` — versão com erros
-- `assets/css/style-corrigido.css` — referência corrigida
-- `assets/img/teste.jpg` — imagem de apoio
+- `index.html` — página principal
+- `assets/css/style.css` — estilos do exercício
+- `assets/css/style-com-erros.css` — versão com os seis erros
+- `assets/css/style-corrigido.css` — versão corrigida
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -26,5 +28,5 @@ Pontos e vírgulas; chaves; nomes de propriedades; valores válidos; depuração
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

@@ -2,36 +2,59 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
-    <meta name="description" content="Estudo de navegação entre páginas no HTML">
-    <meta name="keywords" content="HTML, navegação, tags">
+    <meta name="description" content="Página interna do exercício de navegação, com explicação sobre caminhos relativos.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 11, navegação entre páginas">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
-
-    <!-- Ícone da página -->
-    <link rel="icon" href="../assets/img/navegador-de-internet.png" type="image/x-icon">
-
-    <title>Sobre - Meu Site</title>
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+    <title>Sobre — Navegação entre páginas</title>
 </head>
 
 <body>
-    <img src="../assets/img/Logo site.jpg" alt="Logo do site" width="150" height="100">
-    <nav>
-        <a href="../index.html">Início</a> |
-        <a href="sobre.html">Sobre</a> |
-        <a href="contato.html">Contato</a>
-    </nav>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 11 · Página interna</span>
+        <h1>Sobre o site</h1>
+        <p>Esta página fica dentro da pasta <code>pages/</code> e exemplifica o uso de caminhos relativos.</p>
+    </div>
+</header>
 
-    <h1>Sobre</h1>
-    <p>Esta página fica dentro da pasta <code>pages/</code>, por isso o
-        link para a página inicial usa <code>../index.html</code> (sobe
-        um nível de pasta) e a imagem usa <code>../assets/img/Logo site.jpg</code>.</p>
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+            <nav class="site-nav" aria-label="Navegação principal">
+                <a class="brand" href="../index.html">
+                    <img src="../assets/img/Logo site.jpg" alt="Logo do site">
+                    <span>Meu Site</span>
+                </a>
+                <div class="site-nav-links">
+                    <a href="../index.html">Início</a>
+                    <a href="sobre.html" aria-current="page">Sobre</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </nav>
+
+            <h2 class="demo-title">Como os caminhos relativos funcionam</h2>
+            <p>Como esta página está em <code>pages/sobre.html</code>, o link
+                para a página inicial usa <code>../index.html</code>: o
+                <code>../</code> sobe um nível de pasta antes de abrir o arquivo.</p>
+            <p>O mesmo vale para os recursos:</p>
+            <ul>
+                <li><code>../assets/css/style.css</code> carrega o CSS compartilhado;</li>
+                <li><code>../assets/img/Logo site.jpg</code> exibe a logo do site;</li>
+                <li><code>contato.html</code> abre outra página da mesma pasta.</li>
+            </ul>
+            <p class="note">Manter a navegação e os caminhos consistentes evita
+                links quebrados quando o site é aberto diretamente pelo sistema de arquivos.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 11</strong> — Navegação entre páginas</div>
+</footer>
 </body>
 
 </html>

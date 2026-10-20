@@ -11,9 +11,10 @@ Usar identificadores únicos para criar navegação interna entre seções da me
 
 ## Estrutura
 
-`id.html` — página com seções
-- `assets/css/style.css` — estilos e rolagem
-- `assets/img/identificação01.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Atributo `id`; links de âncora; seletores por ID; menu fixo com `position: stic
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

@@ -29,5 +29,5 @@ Site multipágina; navegação; layout responsivo; seções e tabelas; imagens e
 3. Use o menu para navegar entre as páginas do site.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

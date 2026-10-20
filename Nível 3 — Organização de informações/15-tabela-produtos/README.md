@@ -11,9 +11,10 @@ Modelar um catálogo de loja fictícia com imagens, preços, estoque e situaçã
 
 ## Estrutura
 
-`produtos.html` — catálogo tabular
-- `assets/css/style.css` — folha de estilos vinculada
-- `assets/img/` — imagens dos produtos e `tabela.png`
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Estrutura semântica de tabela com `thead` e `tbody`; células de dados; imagens
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

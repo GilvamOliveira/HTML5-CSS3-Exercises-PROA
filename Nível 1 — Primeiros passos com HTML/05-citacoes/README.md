@@ -11,9 +11,10 @@ Apresentar frases famosas utilizando elementos apropriados para citações, abre
 
 ## Estrutura
 
-`citacoes.html` — página de citações
-- `assets/css/style.css` — folha de estilos vinculada
-- `assets/img/citação.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Citações curtas com `q`; citações em bloco com `blockquote`; autoria com `ci
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

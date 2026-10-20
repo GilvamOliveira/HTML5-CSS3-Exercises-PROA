@@ -2,27 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
-    <meta name="description"
-        content="Página pessoal criada para praticar HTML e CSS, apresentando uma breve introdução sobre mim.">
-    <meta name="keywords" content="HTML, favicon, tags">
+    <meta name="description" content="Configurar informações do documento exibidas no navegador e úteis para mecanismos de busca.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 12, favicon e título personalizado">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
-    <link rel="icon" href="assets/img/estrela.png" type="image/x-icon">
-
-    <title>Meu Site Pessoal | Portfólio</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Favicon e título personalizado</title>
 </head>
 
 <body>
-    <h1>Bem-vindo(a) à minha página!</h1>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 12</span>
+        <h1>Favicon e título personalizado</h1>
+        <p>Configurar informações do documento exibidas no navegador e úteis para mecanismos de busca.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<h2 class="demo-title">Bem-vindo(a) à minha página!</h2>
 
     <p>Esta página foi personalizada com um &lt;title&gt; mais
         descritivo, um favicon exibido na aba do navegador e uma tag
@@ -31,6 +33,13 @@
 
     <p>Todas essas configurações ficam dentro do &lt;head&gt;, ou seja,
         não aparecem diretamente no corpo visível da página.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 12</strong> — Favicon e título personalizado</div>
+</footer>
 </body>
 
 </html>

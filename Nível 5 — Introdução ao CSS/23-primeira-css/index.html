@@ -2,26 +2,29 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
-    <meta name="description" content="Uso de CSS e elementos básicos do HTML">
-    <meta name="keywords" content="HTML, CSS, elementos, tags">
+    <meta name="description" content="Comparar as três formas de aplicar CSS em uma página: externo, interno e inline.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 23, minha primeira estilização com css">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
-    <link rel="icon" href="assets/img/css.png" type="image/x-icon">
-
-    <title>Minha Primeira Estilização com CSS</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Minha primeira estilização com CSS</title>
 </head>
 
 <body>
-    <h1>Bem-vindo(a) à minha página!</h1>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 23</span>
+        <h1>Minha primeira estilização com CSS</h1>
+        <p>Comparar as três formas de aplicar CSS em uma página: externo, interno e inline.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<h2 class="demo-title">Bem-vindo(a) à minha página!</h2>
 
     <p>Este parágrafo está estilizado usando um arquivo
         <strong>CSS externo</strong>, conectado por meio da tag
@@ -49,6 +52,13 @@
         atual; e o CSS inline vale só para o elemento onde foi escrito,
         tendo a maior prioridade entre os três, porém deve ser evitado
         em projetos maiores por dificultar a manutenção.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 23</strong> — Minha primeira estilização com CSS</div>
+</footer>
 </body>
 
 </html>

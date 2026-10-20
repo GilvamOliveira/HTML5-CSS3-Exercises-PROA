@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fazer o primeiro uso de JavaScript dentro de uma página HTML para alterar conteúdo em resposta a cliques.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 22, primeiro contato com javascript">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Primeiro contato com JavaScript</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 22</span>
+        <h1>Primeiro contato com JavaScript</h1>
+        <p>Fazer o primeiro uso de JavaScript dentro de uma página HTML para alterar conteúdo em resposta a cliques.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<h2 class="demo-title" id="titulo">Clique no botão para mudar este texto</h2>
+
+    <button onclick="mudarTexto()">Clique aqui</button>
+    <button onclick="mudarNovamente()">Mudar de novo</button>
+
+    <script>
+        // Esta função altera o conteúdo do h1 quando o primeiro botão é clicado
+        function mudarTexto() {
+            document.getElementById("titulo").textContent =
+                "Você clicou no botão! O JavaScript alterou este texto.";
+        }
+
+        // Esta função altera o texto uma segunda vez, mostrando que o
+        // conteúdo pode ser modificado quantas vezes forem necessárias
+        function mudarNovamente() {
+            document.getElementById("titulo").textContent =
+                "Texto alterado novamente pelo segundo botão!";
+        }
+    </script>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 22</strong> — Primeiro contato com JavaScript</div>
+</footer>
+</body>
+
+</html>

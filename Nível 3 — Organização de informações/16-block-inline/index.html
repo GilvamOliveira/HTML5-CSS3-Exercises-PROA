@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparar elementos que ocupam blocos da página com aqueles que fluem dentro do texto.">
+    <meta name="keywords" content="HTML5, CSS3, exercício 16, entendendo block e inline">
+    <meta name="author" content="Gilvam J. T. de Oliveira">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <title>Entendendo Block e Inline</title>
+</head>
+
+<body>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 16</span>
+        <h1>Entendendo Block e Inline</h1>
+        <p>Comparar elementos que ocupam blocos da página com aqueles que fluem dentro do texto.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<h2 class="demo-title">Diferença entre Elementos Block e Inline</h2>
+
+    <!-- div é um elemento de bloco: ocupa toda a largura disponível -->
+    <div style="background-color: #cce5ff;">
+        Este é um &lt;div&gt; (elemento de BLOCO). Ele sempre começa em
+        uma nova linha e ocupa toda a largura disponível.
+    </div>
+
+    <!-- p também é um elemento de bloco -->
+    <p style="background-color: #d4edda;">
+        Este é um &lt;p&gt; (elemento de BLOCO). Assim como a div, cria
+        uma quebra de linha antes e depois dele.
+    </p>
+
+    <!-- h2 também é um elemento de bloco -->
+    <h2 style="background-color: #fff3cd;">
+        Este é um &lt;h2&gt; (elemento de BLOCO)
+    </h2>
+
+    <p>
+        Já o
+        <span style="background-color: #f8d7da;">&lt;span&gt; (INLINE)</span>
+        e o
+        <strong style="background-color: #f8d7da;">&lt;strong&gt; (INLINE)</strong>
+        não quebram a linha, eles ficam
+        <a href="#" style="background-color: #f8d7da;">no meio do texto, como este &lt;a&gt; (INLINE)</a>,
+        ocupando apenas o espaço necessário.
+    </p>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container"><strong>Exercício 16</strong> — Entendendo Block e Inline</div>
+</footer>
+</body>
+
+</html>

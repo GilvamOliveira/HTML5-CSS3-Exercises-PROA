@@ -11,9 +11,10 @@ Praticar a estrutura de regras CSS e aplicar propriedades visuais a títulos e p
 
 ## Estrutura
 
-`index.html` — conteúdo de teste
-- `assets/css/style.css` — regras comentadas
-- `assets/img/css.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Sintaxe `seletor { propriedade: valor; }`; seletores de elemento; cor; tipografi
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

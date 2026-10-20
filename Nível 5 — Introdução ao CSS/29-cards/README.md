@@ -11,9 +11,10 @@ Construir cartões informativos para cursos, usando espaçamento, bordas, sombra
 
 ## Estrutura
 
-`cards.html` — conjunto de cartões
-- `assets/css/style.css` — estilos do componente
-- `assets/img/estudos-sociais.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Componente `.card`; Flexbox com quebra de linha; `margin` e `padding`; bordas ar
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

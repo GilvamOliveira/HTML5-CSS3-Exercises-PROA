@@ -11,9 +11,10 @@ Organizar informações cotidianas em listas de compras, tarefas e definições.
 
 ## Estrutura
 
-`listas.html` — exemplos de listas
-- `assets/css/style.css` — folha de estilos vinculada
-- `assets/img/listas.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Listas não ordenadas `ul`; listas ordenadas `ol`; listas de definição `dl`, `
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 

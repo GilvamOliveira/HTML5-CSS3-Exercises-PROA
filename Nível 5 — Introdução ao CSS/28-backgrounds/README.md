@@ -11,9 +11,10 @@ Experimentar cores, imagens, posicionamento, repetição e gradientes como fundo
 
 ## Estrutura
 
-`backgrounds.html` — seções de demonstração
-- `assets/css/style.css` — estilos de fundo
-- `assets/img/biotecnologia.png` — imagem de referência
+- `index.html` — página principal
+- `assets/css/style.css` — folha de estilos
+- `assets/img/favicon.svg` — ícone da página
+
 
 ## Conceitos praticados
 
@@ -25,5 +26,5 @@ Experimentar cores, imagens, posicionamento, repetição e gradientes como fundo
 2. Abra o arquivo HTML principal em um navegador moderno.
 
 
-> Este exercício faz parte da coleção **30 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
+> Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
 
