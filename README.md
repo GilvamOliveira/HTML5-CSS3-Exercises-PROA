@@ -14,8 +14,6 @@ Todos os exercícios podem ser visualizados diretamente no navegador:
 
 ![Demonstração do projeto: índice, galeria, formulário de cadastro e projetos finais](img/demo.gif)
 
-[Assistir ao vídeo em MP4](img/demo.mp4)
-
 ## Tecnologias
 
 - HTML5
