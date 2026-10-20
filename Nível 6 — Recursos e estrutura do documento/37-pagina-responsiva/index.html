@@ -2,72 +2,78 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Construa uma página que se adapta a celulares, tablets e desktops usando unidades flexíveis, Grid e media queries.">
-    <meta name="keywords" content="HTML, CSS, responsivo, media queries, mobile-first, grid">
+    <meta name="keywords" content="HTML5, CSS3, exercício 37, sua primeira página responsiva">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Sua primeira página responsiva</title>
 </head>
 
 <body>
-<header class="hero">
-    <div class="container hero-grid">
-        <div>
-            <span class="eyebrow">Exercício 37</span>
-            <h1>Uma página para qualquer tela</h1>
-            <p>O layout se reorganiza conforme o espaço disponível, sem esconder conteúdo nem criar rolagem horizontal.</p>
-            <a class="btn" href="#recursos">Conhecer os recursos</a>
-        </div>
-        <img src="assets/img/banner.svg" alt="Ilustração de dispositivos conectados" width="420" height="280">
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 37</span>
+        <h1>Sua primeira página responsiva</h1>
+        <p>Construa uma página que se adapta a celulares, tablets e desktops usando unidades flexíveis, Grid e media queries.</p>
     </div>
 </header>
 
-<main class="container" id="recursos">
-    <section class="intro">
-        <h2>Como a responsividade funciona</h2>
-        <p>Primeiro criamos uma coluna flexível. Depois, usamos pontos de quebra para distribuir os cards em mais colunas
-            quando houver espaço.</p>
-    </section>
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+            <div class="demo-block">
+                <header class="hero">
+                    <div class="container hero-grid">
+                        <div>
+                            <h2 class="demo-title">Uma página para qualquer tela</h2>
+                            <p>O layout se reorganiza conforme o espaço disponível, sem esconder conteúdo nem criar rolagem horizontal.</p>
+                            <a class="btn" href="#recursos">Conhecer os recursos</a>
+                        </div>
+                        <img src="assets/img/banner.svg" alt="Ilustração de dispositivos conectados" width="420" height="280">
+                    </div>
+                </header>
 
-    <section class="card-grid">
-        <article class="info-card">
-            <span class="number">01</span>
-            <h2>Unidades flexíveis</h2>
-            <p>Porcentagens, <code>rem</code>, <code>vw</code> e <code>clamp()</code> acompanham o tamanho da tela.</p>
-        </article>
-        <article class="info-card">
-            <span class="number">02</span>
-            <h2>Grid adaptável</h2>
-            <p><code>repeat(auto-fit, minmax(220px, 1fr))</code> cria colunas automaticamente.</p>
-        </article>
-        <article class="info-card">
-            <span class="number">03</span>
-            <h2>Media queries</h2>
-            <p>Ajustes específicos são aplicados em larguras menores ou maiores.</p>
-        </article>
-        <article class="info-card">
-            <span class="number">04</span>
-            <h2>Imagens flexíveis</h2>
-            <p><code>max-width: 100%</code> impede que imagens ultrapassem o contêiner.</p>
-        </article>
+                <div id="recursos">
+                    <section class="intro">
+                        <h2>Como a responsividade funciona</h2>
+                        <p>Primeiro criamos uma coluna flexível. Depois, usamos pontos de quebra para distribuir os cards em mais colunas
+                            quando houver espaço.</p>
+                    </section>
+
+                    <section class="card-grid">
+                        <article class="info-card">
+                            <span class="number">01</span>
+                            <h2>Unidades flexíveis</h2>
+                            <p>Porcentagens, <code>rem</code>, <code>vw</code> e <code>clamp()</code> acompanham o tamanho da tela.</p>
+                        </article>
+                        <article class="info-card">
+                            <span class="number">02</span>
+                            <h2>Grid adaptável</h2>
+                            <p><code>repeat(auto-fit, minmax(220px, 1fr))</code> cria colunas automaticamente.</p>
+                        </article>
+                        <article class="info-card">
+                            <span class="number">03</span>
+                            <h2>Media queries</h2>
+                            <p>Ajustes específicos são aplicados em larguras menores ou maiores.</p>
+                        </article>
+                        <article class="info-card">
+                            <span class="number">04</span>
+                            <h2>Imagens flexíveis</h2>
+                            <p><code>max-width: 100%</code> impede que imagens ultrapassem o contêiner.</p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
 <footer class="page-footer">
     <div class="container"><strong>Exercício 37</strong> — Sua primeira página responsiva</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

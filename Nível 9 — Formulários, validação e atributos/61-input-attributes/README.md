@@ -15,6 +15,7 @@ Conheça atributos que controlam valor inicial, edição, tamanho, preenchimento
 - `assets/css/style.css` — folha de estilos
 - `assets/img/favicon.svg` — ícone da página
 
+
 ## Conceitos praticados
 
 `value`; `readonly`; `disabled`; `size`; `maxlength` e `minlength`; `placeholder`; `autocomplete`; `inputmode`; diferenças entre readonly e disabled.
@@ -23,5 +24,6 @@ Conheça atributos que controlam valor inicial, edição, tamanho, preenchimento
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.

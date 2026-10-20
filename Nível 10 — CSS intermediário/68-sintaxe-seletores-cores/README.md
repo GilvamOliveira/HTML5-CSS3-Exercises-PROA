@@ -1,4 +1,4 @@
-# 68 — Sintaxe, seletores, cores e comentários
+# 68 — Sintaxe, Seletores, Cores e Comentários
 
 ## Sobre o exercício
 
@@ -15,6 +15,7 @@ Pratique a estrutura de uma regra CSS, diferentes seletores, formatos de cor e c
 - `assets/css/style.css` — folha de estilos
 - `assets/img/favicon.svg` — ícone da página
 
+
 ## Conceitos praticados
 
 Estrutura `seletor { propriedade: valor; }`; seletores de elemento, classe, ID, atributo e pseudo-classes; cores em hexadecimal, `rgb`, `hsl` e nomes; comentários CSS.
@@ -23,5 +24,6 @@ Estrutura `seletor { propriedade: valor; }`; seletores de elemento, classe, ID, 
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.

@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Navegue entre páginas e recursos usando caminhos relativos, entendendo quando subir ou descer diretórios.">
-    <meta name="keywords" content="HTML, caminhos relativos, links, imagens, navegação">
+    <meta name="keywords" content="HTML5, CSS3, exercício 34, organizando caminhos de arquivos">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Organizando caminhos de arquivos</title>
 </head>
 
@@ -25,66 +17,69 @@
     <div class="container">
         <span class="eyebrow">Exercício 34</span>
         <h1>Organizando caminhos de arquivos</h1>
-        <p>Um mesmo site pode ter páginas em pastas diferentes. Os caminhos relativos indicam ao navegador onde cada arquivo está.</p>
+        <p>Navegue entre páginas e recursos usando caminhos relativos, entendendo quando subir ou descer diretórios.</p>
     </div>
 </header>
 
-<nav class="site-nav">
-    <div class="container nav-row">
-        <a class="active" href="index.html">Início</a>
-        <a href="pages/sobre.html">Sobre</a>
-        <a href="pages/contato.html">Contato</a>
-    </div>
-</nav>
-
 <main class="container">
-    <section class="card">
-        <h2>Mapa de caminhos</h2>
-        <div class="path-grid">
-            <div class="path-item">
-                <code>index.html</code>
-                <span>→</span>
-                <code>pages/sobre.html</code>
-                <p>Desce para a pasta <strong>pages</strong>.</p>
-            </div>
-            <div class="path-item">
-                <code>pages/sobre.html</code>
-                <span>→</span>
-                <code>../index.html</code>
-                <p>Sobe um nível para voltar à raiz.</p>
-            </div>
-            <div class="path-item">
-                <code>index.html</code>
-                <span>→</span>
-                <code>assets/img/logo.svg</code>
-                <p>Entra na pasta de recursos do projeto.</p>
-            </div>
-        </div>
-    </section>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+            <nav class="site-nav" aria-label="Navegação do exercício">
+                <div class="nav-row">
+                    <a class="active" href="index.html" aria-current="page">Início</a>
+                    <a href="pages/sobre.html">Sobre</a>
+                    <a href="pages/contato.html">Contato</a>
+                </div>
+            </nav>
 
-    <section class="card">
-        <h2>Recursos compartilhados</h2>
-        <div class="logo-row">
-            <img src="assets/img/logo.svg" alt="Logotipo do projeto de caminhos" width="120" height="120">
-            <div>
-                <p>O logotipo está em <code>assets/img/logo.svg</code> e é referenciado a partir da raiz.</p>
-                <p>Nas páginas internas, o mesmo arquivo é acessado com <code>../assets/img/logo.svg</code>.</p>
-            </div>
-        </div>
-    </section>
+            <section class="demo-block">
+                <h2 class="demo-title">Mapa de caminhos</h2>
+                <div class="path-grid">
+                    <div class="path-item">
+                        <code>index.html</code>
+                        <span>→</span>
+                        <code>pages/sobre.html</code>
+                        <p>Desce para a pasta <strong>pages</strong>.</p>
+                    </div>
+                    <div class="path-item">
+                        <code>pages/sobre.html</code>
+                        <span>→</span>
+                        <code>../index.html</code>
+                        <p>Sobe um nível para voltar à raiz.</p>
+                    </div>
+                    <div class="path-item">
+                        <code>index.html</code>
+                        <span>→</span>
+                        <code>assets/img/logo.svg</code>
+                        <p>Entra na pasta de recursos do projeto.</p>
+                    </div>
+                </div>
+            </section>
 
-    <section class="card">
-        <h2>Pratique</h2>
-        <p>Abra as páginas Sobre e Contato pelo menu e observe a barra de endereço do navegador. Depois, use o link
-            <strong>Início</strong> para retornar.</p>
-        <a class="btn" href="pages/sobre.html">Abrir página Sobre</a>
+            <section class="demo-block">
+                <h2>Recursos compartilhados</h2>
+                <div class="logo-row">
+                    <img src="assets/img/logo.svg" alt="Logotipo do projeto de caminhos" width="120" height="120">
+                    <div>
+                        <p>O logotipo está em <code>assets/img/logo.svg</code> e é referenciado a partir da raiz.</p>
+                        <p>Nas páginas internas, o mesmo arquivo é acessado com <code>../assets/img/logo.svg</code>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="demo-block">
+                <h2>Pratique</h2>
+                <p>Abra as páginas Sobre e Contato pelo menu e observe a barra de endereço do navegador. Depois, use o link
+                    <strong>Início</strong> para retornar.</p>
+                <a class="btn" href="pages/sobre.html">Abrir página Sobre</a>
+            </section>
+        </div>
     </section>
 </main>
 
 <footer class="page-footer">
     <div class="container"><strong>Exercício 34</strong> — Organizando caminhos de arquivos</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

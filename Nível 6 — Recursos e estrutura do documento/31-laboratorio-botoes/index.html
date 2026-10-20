@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Explore os tipos, estados e variações visuais de botões em HTML e CSS.">
-    <meta name="keywords" content="HTML, botões, button, CSS, estados, acessibilidade">
+    <meta name="keywords" content="HTML5, CSS3, exercício 31, laboratório de botões">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Laboratório de botões</title>
 </head>
 
@@ -25,13 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 31</span>
         <h1>Laboratório de botões</h1>
-        <p>Descubra como os botões se comportam em diferentes contextos e aprenda a estilizar cada estado de interação.</p>
+        <p>Explore os tipos, estados e variações visuais de botões em HTML e CSS.</p>
     </div>
 </header>
 
 <main class="container">
-    <section class="card">
-        <h2>Tipos de botão</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Tipos de botão</h2>
         <p>O atributo <code>type</code> define o comportamento do botão dentro de um formulário. Fora dele, o tipo
             <code>button</code> é usado apenas para ações controladas por JavaScript.</p>
 
@@ -47,7 +41,7 @@
         </form>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Variações visuais</h2>
         <p>As classes permitem criar famílias de botões consistentes sem repetir regras de estilo.</p>
         <div class="button-row">
@@ -58,7 +52,7 @@
         </div>
     </section>
 
-    <section class="card" id="estados">
+    <section class="demo-block" id="estados">
         <h2>Estados interativos</h2>
         <p>Passe o mouse, navegue com a tecla <kbd>Tab</kbd> e pressione os botões para observar
             <code>:hover</code>, <code>:focus-visible</code> e <code>:active</code>.</p>
@@ -68,12 +62,13 @@
         </div>
         <p class="hint">Dica de acessibilidade: mantenha sempre um indicador de foco visível.</p>
     </section>
+        </div>
+    </section>
 </main>
 
 <footer class="page-footer">
     <div class="container"><strong>Exercício 31</strong> — Laboratório de botões</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

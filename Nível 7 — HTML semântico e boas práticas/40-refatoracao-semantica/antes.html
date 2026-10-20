@@ -2,57 +2,58 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Exemplo de página construída apenas com divs, antes da refatoração semântica.">
-    <meta name="keywords" content="HTML, refatoração, div, semântica">
+    <meta name="keywords" content="HTML5, CSS3, exercício 40, refatoração semântica">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
-    <title>Antes da refatoração — Exercício 40</title>
+    <title>Antes da refatoração — Refatoração semântica</title>
 </head>
 
 <body>
 <header class="page-header">
     <div class="container">
-        <span class="eyebrow">Exercício 40</span>
+        <span class="eyebrow">Exercício 40 · Página auxiliar</span>
         <h1>Antes da refatoração</h1>
         <p>Esta página usa apenas divs com classes. Visualmente funciona, mas o código não informa o significado de cada região.</p>
     </div>
 </header>
+
 <main class="container">
-    <div class="card">
-        <div class="topo">
-            <div class="logo">Meu Site</div>
-            <div class="menu"><a href="index.html">Voltar para a versão refatorada</a></div>
-        </div>
-        <div class="conteudo">
-            <div class="post">
-                <div class="titulo">Notícia importante</div>
-                <div class="texto">Todo o conteúdo está em divs. O navegador e os leitores de tela não sabem qual parte
-                    é o menu, o artigo ou o rodapé.</div>
-                <div class="autor">Por Equipe PROA</div>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+            <div class="demo-block">
+                <h2 class="demo-title">Estrutura construída apenas com divs</h2>
+                <div class="card">
+                    <div class="topo">
+                        <div class="logo">Meu Site</div>
+                        <div class="menu"><a href="index.html">Voltar para a versão refatorada</a></div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="post">
+                            <div class="titulo">Notícia importante</div>
+                            <div class="texto">Todo o conteúdo está em divs. O navegador e os leitores de tela não sabem qual parte
+                                é o menu, o artigo ou o rodapé.</div>
+                            <div class="autor">Por Equipe PROA</div>
+                        </div>
+                        <div class="lateral">
+                            <div class="subtitulo">Leia também</div>
+                            <div class="texto">Outra matéria de exemplo.</div>
+                        </div>
+                    </div>
+                    <div class="rodape">© 2026 Meu Site</div>
+                </div>
             </div>
-            <div class="lateral">
-                <div class="subtitulo">Leia também</div>
-                <div class="texto">Outra matéria de exemplo.</div>
-            </div>
         </div>
-        <div class="rodape">© 2026 Meu Site</div>
-    </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 40</strong> — Refatoração semântica</div>
 </footer>
-
+    <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 
 </html>

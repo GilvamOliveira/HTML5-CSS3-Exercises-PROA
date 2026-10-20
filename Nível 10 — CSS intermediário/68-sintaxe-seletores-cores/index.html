@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Pratique a estrutura de uma regra CSS, diferentes seletores, formatos de cor e comentários.">
-    <meta name="keywords" content="CSS, sintaxe, seletores, cores, comentários, especificidade">
+    <meta name="keywords" content="HTML5, CSS3, exercício 68, sintaxe, seletores, cores e comentários">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Sintaxe, seletores, cores e comentários</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 68</span>
         <h1>Sintaxe, seletores, cores e comentários</h1>
-        <p>Uma regra CSS conecta um seletor a um conjunto de declarações.</p>
+        <p>Pratique a estrutura de uma regra CSS, diferentes seletores, formatos de cor e comentários.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Sintaxe básica</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Sintaxe básica</h2>
         <pre><code>seletor {
     propriedade: valor;
     outra-propriedade: outro-valor;
@@ -39,7 +34,7 @@
             e finalizados com ponto e vírgula.</p>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Seletores na prática</h2>
         <p>Parágrafo comum, estilizado pelo seletor de elemento.</p>
         <p class="destaque">Parágrafo com a classe <code>.destaque</code>.</p>
@@ -48,7 +43,7 @@
         <p><a class="link-demo" href="#">Passe o mouse para ver a pseudo-classe :hover</a></p>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Cores</h2>
         <div class="swatches">
             <div class="swatch swatch-hex"><span>#0b5ed7</span></div>
@@ -63,7 +58,7 @@ color: navy;</code></pre>
         <p>Todos os exemplos representam cores válidas. Escolha o formato mais legível para o contexto.</p>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Comentários</h2>
         <pre><code>/* Comentário de uma linha */
 
@@ -77,11 +72,13 @@ p {
 */</code></pre>
         <p class="note">Comentários não aparecem na página e ajudam a documentar decisões de estilo.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 68</strong> — Sintaxe, seletores, cores e comentários</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

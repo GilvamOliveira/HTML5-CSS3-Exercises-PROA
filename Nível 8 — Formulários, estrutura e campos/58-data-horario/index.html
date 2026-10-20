@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Use campos nativos de data, hora, data e hora local, mês e semana para coletar informações temporais.">
-    <meta name="keywords" content="HTML, input, date, time, datetime-local, month, week">
+    <meta name="keywords" content="HTML5, CSS3, exercício 58, inputs de data e horário">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Inputs de data e horário</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 58</span>
         <h1>Inputs de data e horário</h1>
-        <p>Os campos temporais exibem seletores nativos e retornam valores padronizados.</p>
+        <p>Use campos nativos de data, hora, data e hora local, mês e semana para coletar informações temporais.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Agendamento</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Agendamento</h2>
         <form action="#" method="post" class="form-grid two-columns">
             <div class="field">
                 <label for="data-evento">Data do evento — <code>date</code></label>
@@ -63,7 +58,7 @@
         </form>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Formato dos valores</h2>
         <p>Os valores enviados seguem padrões definidos:</p>
         <ul>
@@ -75,11 +70,13 @@
         </ul>
         <p>A interface exibida depende do navegador e do sistema operacional, mas o valor enviado é padronizado.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 58</strong> — Inputs de data e horário</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

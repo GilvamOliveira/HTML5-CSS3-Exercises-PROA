@@ -1,4 +1,4 @@
-# 33 — HTML encontrando JavaScript
+# 33 — HTML Encontrando JavaScript
 
 ## Sobre o exercício
 
@@ -17,6 +17,7 @@ Adicione interatividade a uma página HTML com JavaScript externo, manipulação
 - `assets/img/favicon.svg` — ícone da página
 - `script.js` — comportamentos da página
 
+
 ## Conceitos praticados
 
 Elemento `script` com `src`; carregamento do DOM; `querySelector`; `addEventListener`; manipulação de `textContent`; funções e variáveis.
@@ -25,5 +26,6 @@ Elemento `script` com `src`; carregamento do DOM; `querySelector`; `addEventList
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.

@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Represente caracteres reservados e símbolos especiais com entidades HTML em tabelas e exemplos de código.">
-    <meta name="keywords" content="HTML, entidades, caracteres reservados, símbolos, Unicode">
+    <meta name="keywords" content="HTML5, CSS3, exercício 42, entidades html">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Entidades HTML</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 42</span>
         <h1>Entidades HTML</h1>
-        <p>Alguns caracteres são reservados pelo HTML. As entidades permitem exibi-los sem que o navegador os interprete como marcação.</p>
+        <p>Represente caracteres reservados e símbolos especiais com entidades HTML em tabelas e exemplos de código.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Tabela de entidades</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Tabela de entidades</h2>
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -62,18 +57,20 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Por que escapar?</h2>
         <p>Se escrevermos <code>&lt;strong&gt;</code> diretamente no conteúdo, o navegador interpreta a tag. Para mostrar
             o texto literal, usamos <code>&amp;lt;strong&amp;gt;</code>.</p>
         <pre><code>&lt;p&gt;Use &amp;lt;strong&amp;gt; para destacar uma palavra.&lt;/p&gt;</code></pre>
         <p>Resultado: <code>&lt;strong&gt;</code> aparece como texto em vez de virar um elemento.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 42</strong> — Entidades HTML</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

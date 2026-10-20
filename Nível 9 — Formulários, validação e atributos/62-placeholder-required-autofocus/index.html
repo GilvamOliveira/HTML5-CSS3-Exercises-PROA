@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Melhore a orientação e a validação do formulário com dicas, campos obrigatórios e foco inicial automático.">
-    <meta name="keywords" content="HTML, placeholder, required, autofocus, validação, formulário">
+    <meta name="keywords" content="HTML5, CSS3, exercício 62, placeholder, required e autofocus">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Placeholder, Required e Autofocus</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 62</span>
         <h1>Placeholder, Required e Autofocus</h1>
-        <p>Esses atributos orientam o preenchimento, mas não substituem rótulos claros nem validação no servidor.</p>
+        <p>Melhore a orientação e a validação do formulário com dicas, campos obrigatórios e foco inicial automático.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Crie seu acesso</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Crie seu acesso</h2>
         <p>O campo de nome recebe foco automaticamente ao abrir a página.</p>
 
         <form action="#" method="post" class="form-grid">
@@ -61,7 +56,7 @@
         </form>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Boa prática</h2>
         <ul>
             <li>Use <code>placeholder</code> como exemplo, não como rótulo.</li>
@@ -72,11 +67,13 @@
         <p class="note">O CSS desta página destaca campos inválidos apenas depois que o usuário digitou algo, evitando
             que todos os campos apareçam em erro antes da interação.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 62</strong> — Placeholder, Required e Autofocus</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

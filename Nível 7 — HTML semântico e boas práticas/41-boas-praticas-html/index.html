@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Revise um conjunto de boas práticas de estrutura, acessibilidade e organização que devem acompanhar todo documento HTML.">
-    <meta name="keywords" content="HTML, boas práticas, acessibilidade, semântica, validação">
+    <meta name="keywords" content="HTML5, CSS3, exercício 41, aplicando boas práticas html">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Aplicando boas práticas HTML</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 41</span>
         <h1>Aplicando boas práticas HTML</h1>
-        <p>Um documento de qualidade é compreensível para pessoas, navegadores e tecnologias assistivas.</p>
+        <p>Revise um conjunto de boas práticas de estrutura, acessibilidade e organização que devem acompanhar todo documento HTML.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Checklist essencial</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Checklist essencial</h2>
         <ul class="checklist">
             <li>Declare <code>&lt;!DOCTYPE html&gt;</code> na primeira linha.</li>
             <li>Informe o idioma com <code>&lt;html lang="pt-BR"&gt;</code>.</li>
@@ -45,7 +40,7 @@
         </ul>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Compare</h2>
         <div class="compare-grid">
             <article class="example good">
@@ -76,7 +71,7 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Validação</h2>
         <p>Depois de escrever o HTML, verifique se as tags estão fechadas, se os IDs são únicos e se os caminhos de
             arquivos estão corretos. Ferramentas de validação ajudam a encontrar erros que o navegador costuma corrigir
@@ -84,11 +79,13 @@
         <p class="note">Boas práticas não são regras decorativas: elas melhoram a experiência de quem usa e de quem
             mantém o projeto.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 41</strong> — Aplicando boas práticas HTML</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

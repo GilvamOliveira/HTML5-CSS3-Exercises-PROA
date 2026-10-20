@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Adicione emojis a cards e textos usando caracteres Unicode, com atenção à codificação UTF-8 e ao contexto.">
-    <meta name="keywords" content="HTML, emojis, Unicode, UTF-8, acessibilidade">
+    <meta name="keywords" content="HTML5, CSS3, exercício 44, emojis em html">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Emojis em HTML</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 44</span>
         <h1>Emojis em HTML</h1>
-        <p>Emojis são caracteres Unicode. Com a codificação correta, podem ser usados diretamente no HTML.</p>
+        <p>Adicione emojis a cards e textos usando caracteres Unicode, com atenção à codificação UTF-8 e ao contexto.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Cartões com emojis</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Cartões com emojis</h2>
         <div class="emoji-grid">
             <article class="emoji-card">
                 <span class="emoji" aria-hidden="true">😀</span>
@@ -65,14 +60,14 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Como usar no texto</h2>
         <p>Parabéns! Você concluiu a atividade. 🎉</p>
         <p>Próxima etapa: revisar o código e testar em outro navegador. 🔎</p>
         <pre><code>&lt;p&gt;Parabéns! Você concluiu a atividade. 🎉&lt;/p&gt;</code></pre>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Cuidados</h2>
         <ul>
             <li>Use emojis com moderação em interfaces profissionais.</li>
@@ -81,11 +76,13 @@
             <li>Teste em diferentes sistemas: o desenho pode variar.</li>
         </ul>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 44</strong> — Emojis em HTML</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

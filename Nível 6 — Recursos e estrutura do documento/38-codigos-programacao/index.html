@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Apresente trechos de código em uma página usando pre, code, kbd, samp e var com uma formatação legível.">
-    <meta name="keywords" content="HTML, código, pre, code, kbd, samp, var">
+    <meta name="keywords" content="HTML5, CSS3, exercício 38, página para códigos de programação">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Página para códigos de programação</title>
 </head>
 
@@ -25,13 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 38</span>
         <h1>Página para códigos de programação</h1>
-        <p>Uma documentação técnica precisa exibir código com clareza, preservando espaços e destacando comandos.</p>
+        <p>Apresente trechos de código em uma página usando pre, code, kbd, samp e var com uma formatação legível.</p>
     </div>
 </header>
 
 <main class="container">
-    <section class="card">
-        <h2>Código em bloco</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Código em bloco</h2>
         <p>Use <code>&lt;pre&gt;</code> para manter a formatação e <code>&lt;code&gt;</code> para indicar que o conteúdo
             é código.</p>
         <pre><code>function saudar(nome) {
@@ -42,7 +36,7 @@
 console.log(saudar("Aluno"));</code></pre>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>HTML de exemplo</h2>
         <p>Os sinais de menor e maior precisam ser escapados com <code>&amp;lt;</code> e <code>&amp;gt;</code>.</p>
         <pre><code>&lt;article class="card"&gt;
@@ -51,7 +45,7 @@ console.log(saudar("Aluno"));</code></pre>
 &lt;/article&gt;</code></pre>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Elementos semânticos para tecnologia</h2>
         <ul class="tag-list">
             <li><code>&lt;code&gt;</code> — trecho de código.</li>
@@ -60,12 +54,13 @@ console.log(saudar("Aluno"));</code></pre>
             <li><code>&lt;var&gt;</code> — variável: <var>total</var> = <var>preco</var> × <var>quantidade</var>.</li>
         </ul>
     </section>
+        </div>
+    </section>
 </main>
 
 <footer class="page-footer">
     <div class="container"><strong>Exercício 38</strong> — Página para códigos de programação</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

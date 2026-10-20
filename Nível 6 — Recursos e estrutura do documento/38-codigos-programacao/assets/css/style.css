@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -70,8 +74,184 @@ main.container {
     box-shadow: var(--shadow);
 }
 
-h2 {
+.exercise-panel {
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.exercise-content > :first-child {
     margin-top: 0;
+}
+
+.exercise-content h1,
+.exercise-content h2,
+.exercise-content h3 {
+    line-height: 1.25;
+}
+
+.exercise-content h1 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+.exercise-content h2 {
+    margin-top: 1.75rem;
+}
+
+.exercise-content h3 {
+    margin-top: 1.4rem;
+}
+
+.demo-title {
+    margin: 0 0 .85rem;
+    font-size: clamp(1.55rem, 4vw, 2.15rem);
+}
+
+.exercise-content p {
+    margin: .8rem 0;
+}
+
+.exercise-content ul,
+.exercise-content ol {
+    padding-left: 1.35rem;
+}
+
+.exercise-content li {
+    margin: .35rem 0;
+}
+
+.exercise-content li > ul,
+.exercise-content li > ol {
+    margin-top: .35rem;
+}
+
+.exercise-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.exercise-content figure {
+    margin: 1.25rem 0;
+}
+
+.exercise-content figcaption {
+    margin-top: .5rem;
+    color: var(--muted);
+    font-size: .95rem;
+}
+
+.exercise-content blockquote {
+    margin: 1.25rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 12px 12px 0;
+    background: #eef5ff;
+}
+
+.exercise-content blockquote p {
+    margin: 0;
+}
+
+.exercise-content footer {
+    margin-top: 1.5rem;
+    color: var(--muted);
+}
+
+.exercise-content code {
+    background: #edf2f7;
+    border-radius: 5px;
+    padding: .1rem .35rem;
+    font-family: Consolas, monospace;
+}
+
+.exercise-content pre {
+    overflow-x: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #111827;
+    color: #eef2ff;
+}
+
+.exercise-content pre code {
+    padding: 0;
+    background: transparent;
+    color: inherit;
+}
+
+.exercise-content kbd {
+    border: 1px solid #c7d2de;
+    border-bottom-width: 3px;
+    border-radius: 6px;
+    padding: .1rem .4rem;
+    background: #ffffff;
+    font-family: Consolas, monospace;
+}
+
+.exercise-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.exercise-content th,
+.exercise-content td {
+    padding: .7rem .8rem;
+    border: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.exercise-content th {
+    background: #eaf0f6;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.table-wrapper table {
+    margin-top: 0;
+}
+
+.exercise-content button,
+.exercise-content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    padding: .7rem 1rem;
+    border: 0;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.exercise-content button:hover,
+.exercise-content .btn:hover {
+    background: var(--primary-strong);
+}
+
+.exercise-content button:focus-visible,
+.exercise-content .btn:focus-visible {
+    outline: 3px solid rgba(11, 94, 215, .35);
+    outline-offset: 3px;
+}
+
+.note {
+    margin: 1.25rem 0 0;
+    padding: .9rem 1rem;
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    background: #eef5ff;
+    color: #24364b;
+}
+
+.card + .card {
+    margin-top: 1.25rem;
 }
 
 a {
@@ -92,10 +272,6 @@ a {
     .page-header {
         padding: 2rem 0;
     }
-}
-
-.card + .card {
-    margin-top: 1.25rem;
 }
 
 code {
@@ -156,4 +332,18 @@ var {
     color: var(--primary-strong);
     font-family: Consolas, monospace;
     font-style: italic;
+}
+
+.exercise-content .demo-block {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.exercise-content .demo-block + .demo-block {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
 }

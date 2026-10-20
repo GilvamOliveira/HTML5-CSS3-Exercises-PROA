@@ -1,4 +1,4 @@
-# 36 — Criando um layout de site
+# 36 — Criando um Layout de Site
 
 ## Sobre o exercício
 
@@ -15,6 +15,7 @@ Monte a estrutura visual de um site com cabeçalho, navegação, conteúdo princ
 - `assets/css/style.css` — folha de estilos
 - `assets/img/favicon.svg` — ícone da página
 
+
 ## Conceitos praticados
 
 Estrutura de layout; `header`, `nav`, `main`, `section`, `aside` e `footer`; CSS Grid; Flexbox; espaçamento; responsividade básica.
@@ -23,5 +24,6 @@ Estrutura de layout; `header`, `nav`, `main`, `section`, `aside` e `footer`; CSS
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.

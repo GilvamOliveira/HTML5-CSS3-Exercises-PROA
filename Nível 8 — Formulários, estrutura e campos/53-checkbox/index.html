@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Use caixas de seleção para permitir múltiplas escolhas independentes em um formulário.">
-    <meta name="keywords" content="HTML, checkbox, formulário, múltipla escolha, acessibilidade">
+    <meta name="keywords" content="HTML5, CSS3, exercício 53, checkbox">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Checkbox</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 53</span>
         <h1>Checkbox</h1>
-        <p>Caixas de seleção permitem escolher nenhuma, uma ou várias opções ao mesmo tempo.</p>
+        <p>Use caixas de seleção para permitir múltiplas escolhas independentes em um formulário.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Áreas de interesse</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Áreas de interesse</h2>
         <form action="#" method="post" class="form-grid">
             <fieldset>
                 <legend>O que você quer estudar?</legend>
@@ -93,18 +88,20 @@
         </form>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Checkbox x radio</h2>
         <p>Use <strong>checkbox</strong> para escolhas independentes e múltiplas. Use <strong>radio</strong> quando
             apenas uma opção puder ser escolhida.</p>
         <p>Para que vários checkboxes enviem valores diferentes, todos podem compartilhar o mesmo <code>name</code>,
             mas cada um deve ter seu próprio <code>value</code>.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 53</strong> — Checkbox</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

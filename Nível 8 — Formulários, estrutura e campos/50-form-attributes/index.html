@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Explore os atributos do elemento form que controlam envio, método, destino, codificação e validação.">
-    <meta name="keywords" content="HTML, form, action, method, target, enctype, autocomplete">
+    <meta name="keywords" content="HTML5, CSS3, exercício 50, form attributes">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Form Attributes</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 50</span>
         <h1>Form Attributes</h1>
-        <p>Os atributos do formulário definem para onde, como e com qual formato os dados serão enviados.</p>
+        <p>Explore os atributos do elemento form que controlam envio, método, destino, codificação e validação.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Principais atributos</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Principais atributos</h2>
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -76,7 +71,7 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Formulário de exemplo</h2>
         <form action="#" method="post" autocomplete="on" class="form-grid">
             <div class="field">
@@ -93,17 +88,19 @@
         </form>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>GET e POST</h2>
         <p><strong>GET</strong> envia os dados na URL e é indicado para buscas e filtros. <strong>POST</strong> envia os
             dados no corpo da requisição e é mais adequado para cadastros, login e informações sensíveis.</p>
         <p>Nenhum dado é processado neste exemplo: o formulário usa <code>action="#"</code> apenas para demonstração.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 50</strong> — Form Attributes</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

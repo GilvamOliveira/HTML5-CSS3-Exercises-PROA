@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Compare uma página construída apenas com divs com a mesma página refatorada usando elementos semânticos.">
-    <meta name="keywords" content="HTML, refatoração, semântica, div, article, aside">
+    <meta name="keywords" content="HTML5, CSS3, exercício 40, refatoração semântica">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Refatoração semântica</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 40</span>
         <h1>Refatoração semântica</h1>
-        <p>A mesma interface pode ser construída com divs ou com elementos semânticos. O resultado visual é parecido, mas a qualidade do código muda.</p>
+        <p>Compare uma página construída apenas com divs com a mesma página refatorada usando elementos semânticos.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Versão refatorada</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Versão refatorada</h2>
         <p>Esta página usa <code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>,
             <code>aside</code> e <code>footer</code>. Cada elemento comunica sua função.</p>
         <div class="compare-grid">
@@ -59,11 +54,13 @@
         </div>
         <p><a class="btn" href="antes.html">Abrir a versão com divs</a></p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 40</strong> — Refatoração semântica</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

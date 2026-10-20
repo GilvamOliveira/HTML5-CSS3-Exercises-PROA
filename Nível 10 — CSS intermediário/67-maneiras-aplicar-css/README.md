@@ -1,4 +1,4 @@
-# 67 — Três maneiras de aplicar CSS
+# 67 — Três Maneiras de Aplicar CSS
 
 ## Sobre o exercício
 
@@ -15,6 +15,7 @@ Compare CSS externo, interno e inline, entenda a ordem de aplicação e escolha 
 - `assets/css/style.css` — folha de estilos
 - `assets/img/favicon.svg` — ícone da página
 
+
 ## Conceitos praticados
 
 CSS externo com `link`; CSS interno com `style`; CSS inline com o atributo `style`; cascata; especificidade; manutenção e reutilização.
@@ -23,5 +24,6 @@ CSS externo com `link`; CSS interno com `style`; CSS inline com o atributo `styl
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.

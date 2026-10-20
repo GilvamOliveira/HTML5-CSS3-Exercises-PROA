@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Explore fundos, bordas, margens e preenchimento para construir e compreender o modelo de caixa do CSS.">
-    <meta name="keywords" content="CSS, background, border, margin, padding, box model">
+    <meta name="keywords" content="HTML5, CSS3, exercício 69, background, border, margin e padding">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Background, Border, Margin e Padding</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 69</span>
         <h1>Background, Border, Margin e Padding</h1>
-        <p>Todo elemento visível é uma caixa formada por conteúdo, padding, borda e margem.</p>
+        <p>Explore fundos, bordas, margens e preenchimento para construir e compreender o modelo de caixa do CSS.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>O modelo de caixa</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">O modelo de caixa</h2>
         <div class="box-demo" aria-label="Representação das camadas margin, border, padding e conteúdo">
             <div class="margin-layer">
                 <span class="layer-label">margin</span>
@@ -51,7 +46,7 @@
         </ul>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Backgrounds</h2>
         <div class="bg-grid">
             <div class="bg-box bg-color">Cor sólida</div>
@@ -71,7 +66,7 @@
 }</code></pre>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Bordas</h2>
         <div class="border-grid">
             <div class="border-box border-solid">solid</div>
@@ -81,7 +76,7 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Margin e padding</h2>
         <div class="spacing-demo">
             <div class="spacing-outer">
@@ -94,11 +89,13 @@
         <p>Use <code>padding</code> para dar respiro dentro da caixa e <code>margin</code> para afastar caixas
             vizinhas. Com <code>box-sizing: border-box</code>, largura e altura incluem padding e borda.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 69</strong> — Background, Border, Margin e Padding</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

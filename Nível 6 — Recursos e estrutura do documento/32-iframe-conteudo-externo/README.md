@@ -1,4 +1,4 @@
-# 32 — Incorporando conteúdo com iframe
+# 32 — Incorporando Conteúdo com Iframe
 
 ## Sobre o exercício
 
@@ -16,6 +16,7 @@ Use o elemento iframe para incorporar uma página local dentro de outra e conhe�
 - `assets/img/favicon.svg` — ícone da página
 - `exemplo.html` — página incorporada pelo iframe
 
+
 ## Conceitos praticados
 
 Elemento `iframe`; atributos `src`, `title`, `width`, `height`, `loading` e `sandbox`; incorporação de páginas locais; segurança e acessibilidade.
@@ -24,5 +25,6 @@ Elemento `iframe`; atributos `src`, `title`, `width`, `height`, `loading` e `san
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.

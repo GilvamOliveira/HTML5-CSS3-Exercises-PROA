@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Use expressões regulares no atributo pattern para validar formatos específicos diretamente no navegador.">
-    <meta name="keywords" content="HTML, pattern, regex, validação, formulário, CEP">
+    <meta name="keywords" content="HTML5, CSS3, exercício 64, pattern">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Pattern</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 64</span>
         <h1>Pattern</h1>
-        <p>O atributo pattern aceita uma expressão regular. Ele verifica o formato, mas não confirma se o dado existe.</p>
+        <p>Use expressões regulares no atributo pattern para validar formatos específicos diretamente no navegador.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Cadastro com formatos específicos</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Cadastro com formatos específicos</h2>
         <form action="#" method="post" class="form-grid two-columns">
             <div class="field">
                 <label for="cep-pattern">CEP</label>
@@ -73,7 +68,7 @@
         </form>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Entendendo as expressões</h2>
         <div class="table-wrapper">
             <table>
@@ -95,11 +90,13 @@
         <p class="note">O <code>title</code> deve explicar o formato esperado. O navegador usa esse texto na mensagem de
             validação.</p>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 64</strong> — Pattern</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

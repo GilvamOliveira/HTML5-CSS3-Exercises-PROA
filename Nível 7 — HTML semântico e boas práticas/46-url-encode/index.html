@@ -2,21 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Entenda como espaços, acentos e caracteres especiais são codificados em endereços e parâmetros de formulário.">
-    <meta name="keywords" content="HTML, URL, URL encode, query string, formulário GET">
+    <meta name="keywords" content="HTML5, CSS3, exercício 46, explorando url encode">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>Explorando URL Encode</title>
 </head>
 
@@ -25,12 +17,15 @@
     <div class="container">
         <span class="eyebrow">Exercício 46</span>
         <h1>Explorando URL Encode</h1>
-        <p>Navegadores codificam automaticamente caracteres especiais para que a URL continue válida.</p>
+        <p>Entenda como espaços, acentos e caracteres especiais são codificados em endereços e parâmetros de formulário.</p>
     </div>
 </header>
+
 <main class="container">
-    <section class="card">
-        <h2>Tabela de codificação</h2>
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+<section class="demo-block">
+        <h2 class="demo-title">Tabela de codificação</h2>
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -54,14 +49,14 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Exemplos de URL</h2>
         <p><a href="https://example.com/busca?q=HTML%20e%20CSS">https://example.com/busca?q=HTML%20e%20CSS</a></p>
         <p><a href="https://example.com/pesquisa?termo=programa%C3%A7%C3%A3o">https://example.com/pesquisa?termo=programa%C3%A7%C3%A3o</a></p>
         <p>Na segunda URL, <code>programa%C3%A7%C3%A3o</code> representa a palavra “programação”.</p>
     </section>
 
-    <section class="card">
+    <section class="demo-block">
         <h2>Teste com um formulário</h2>
         <p>O método <code>GET</code> envia os dados na própria URL. Ao enviar, observe a barra de endereços.</p>
         <form action="index.html" method="get" class="search-form">
@@ -72,11 +67,13 @@
             </div>
         </form>
     </section>
+        </div>
+    </section>
 </main>
+
 <footer class="page-footer">
     <div class="container"><strong>Exercício 46</strong> — Explorando URL Encode</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

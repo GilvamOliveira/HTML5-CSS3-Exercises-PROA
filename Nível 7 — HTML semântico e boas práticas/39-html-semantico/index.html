@@ -2,99 +2,106 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Informações sobre a página -->
     <meta name="description" content="Estruture um artigo de blog com elementos semânticos que descrevem claramente o papel de cada área da página.">
-    <meta name="keywords" content="HTML semântico, header, nav, main, article, aside, footer">
+    <meta name="keywords" content="HTML5, CSS3, exercício 39, html semântico">
     <meta name="author" content="Gilvam J. T. de Oliveira">
-
-    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Ícone da página -->
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
     <title>HTML Semântico</title>
 </head>
 
 <body>
-<header class="site-header">
-    <div class="container header-row">
-        <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
-            <span>Blog Semântico</span>
-        </a>
-        <nav aria-label="Navegação principal">
-            <a href="#artigo">Artigo</a>
-            <a href="#conceitos">Conceitos</a>
-            <a href="#sobre">Sobre</a>
-        </nav>
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">Exercício 39</span>
+        <h1>HTML Semântico</h1>
+        <p>Estruture um artigo de blog com elementos semânticos que descrevem claramente o papel de cada área da página.</p>
     </div>
 </header>
 
-<main class="container layout" id="artigo">
-    <article class="post">
-        <header class="post-header">
-            <p class="category">HTML5 • Semântica</p>
-            <h1>Por que usar HTML semântico?</h1>
-            <p class="meta">Publicado por <strong>Equipe PROA</strong> • Leitura de 5 minutos</p>
-        </header>
+<main class="container">
+    <section class="card exercise-panel">
+        <div class="exercise-content">
+            <div class="demo-block">
+                <header class="site-header">
+                    <div class="container header-row">
+                        <a class="brand" href="index.html">
+                            <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+                            <span>Blog Semântico</span>
+                        </a>
+                        <nav aria-label="Navegação principal">
+                            <a href="#artigo">Artigo</a>
+                            <a href="#conceitos">Conceitos</a>
+                            <a href="#sobre">Sobre</a>
+                        </nav>
+                    </div>
+                </header>
 
-        <section id="conceitos">
-            <h2>O que é HTML semântico?</h2>
-            <p>HTML semântico é o uso de elementos que descrevem o significado do conteúdo, e não apenas sua aparência.
-                Em vez de construir tudo com <code>&lt;div&gt;</code>, usamos tags como <code>&lt;header&gt;</code>,
-                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> e <code>&lt;article&gt;</code>.</p>
-        </section>
+                <div class="layout" id="artigo">
+                    <article class="post">
+                        <header class="post-header">
+                            <p class="category">HTML5 • Semântica</p>
+                            <h2 class="demo-title">Por que usar HTML semântico?</h2>
+                            <p class="meta">Publicado por <strong>Equipe PROA</strong> • Leitura de 5 minutos</p>
+                        </header>
 
-        <section>
-            <h2>Benefícios principais</h2>
-            <ul class="benefits">
-                <li><strong>Acessibilidade:</strong> leitores de tela identificam as regiões da página.</li>
-                <li><strong>SEO:</strong> mecanismos de busca compreendem melhor a estrutura do conteúdo.</li>
-                <li><strong>Manutenção:</strong> o código fica mais fácil de ler e alterar.</li>
-                <li><strong>Consistência:</strong> a equipe compartilha os mesmos significados.</li>
-            </ul>
-        </section>
+                        <section id="conceitos">
+                            <h2>O que é HTML semântico?</h2>
+                            <p>HTML semântico é o uso de elementos que descrevem o significado do conteúdo, e não apenas sua aparência.
+                                Em vez de construir tudo com <code>&lt;div&gt;</code>, usamos tags como <code>&lt;header&gt;</code>,
+                                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> e <code>&lt;article&gt;</code>.</p>
+                        </section>
 
-        <section>
-            <h2>Um exemplo de estrutura</h2>
-            <pre><code>&lt;header&gt;Cabeçalho&lt;/header&gt;
+                        <section>
+                            <h2>Benefícios principais</h2>
+                            <ul class="benefits">
+                                <li><strong>Acessibilidade:</strong> leitores de tela identificam as regiões da página.</li>
+                                <li><strong>SEO:</strong> mecanismos de busca compreendem melhor a estrutura do conteúdo.</li>
+                                <li><strong>Manutenção:</strong> o código fica mais fácil de ler e alterar.</li>
+                                <li><strong>Consistência:</strong> a equipe compartilha os mesmos significados.</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2>Um exemplo de estrutura</h2>
+                            <pre><code>&lt;header&gt;Cabeçalho&lt;/header&gt;
 &lt;nav&gt;Menu de navegação&lt;/nav&gt;
 &lt;main&gt;
     &lt;article&gt;Conteúdo principal&lt;/article&gt;
     &lt;aside&gt;Conteúdo complementar&lt;/aside&gt;
 &lt;/main&gt;
 &lt;footer&gt;Rodapé&lt;/footer&gt;</code></pre>
-        </section>
+                        </section>
 
-        <footer class="post-footer">
-            <p><strong>Conclusão:</strong> escolher a tag certa torna a página mais compreensível para pessoas,
-                navegadores e tecnologias assistivas.</p>
-        </footer>
-    </article>
+                        <footer class="post-footer">
+                            <p><strong>Conclusão:</strong> escolher a tag certa torna a página mais compreensível para pessoas,
+                                navegadores e tecnologias assistivas.</p>
+                        </footer>
+                    </article>
 
-    <aside class="sidebar" id="sobre">
-        <h2>Sobre este exercício</h2>
-        <p>Observe que cada região possui uma função clara. O menu está em <code>nav</code>, o texto principal em
-            <code>article</code> e as informações extras em <code>aside</code>.</p>
-        <h2>Checklist</h2>
-        <ul>
-            <li>Um único <code>main</code> por página.</li>
-            <li>Títulos em ordem hierárquica.</li>
-            <li>Links com texto descritivo.</li>
-            <li>Landmarks identificáveis.</li>
-        </ul>
-    </aside>
+                    <aside class="sidebar" id="sobre">
+                        <h2>Sobre este exercício</h2>
+                        <p>Observe que cada região possui uma função clara. O menu está em <code>nav</code>, o texto principal em
+                            <code>article</code> e as informações extras em <code>aside</code>.</p>
+                        <h2>Checklist</h2>
+                        <ul>
+                            <li>Um único <code>main</code> por página.</li>
+                            <li>Títulos em ordem hierárquica.</li>
+                            <li>Links com texto descritivo.</li>
+                            <li>Landmarks identificáveis.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer class="site-footer">
+<footer class="page-footer">
     <div class="container"><strong>Exercício 39</strong> — HTML Semântico</div>
 </footer>
-
     <script src="../../js/exercise-nav.js" data-exercise-nav defer></script>
 </body>
 

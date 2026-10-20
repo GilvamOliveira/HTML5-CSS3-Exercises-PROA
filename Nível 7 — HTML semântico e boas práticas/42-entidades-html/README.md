@@ -15,6 +15,7 @@ Represente caracteres reservados e símbolos especiais com entidades HTML em tab
 - `assets/css/style.css` — folha de estilos
 - `assets/img/favicon.svg` — ícone da página
 
+
 ## Conceitos praticados
 
 Entidades nomeadas e numéricas; escape de `<`, `>` e `&`; espaços não separáveis; símbolos de copyright, marca registrada e moedas; exibição de código sem interpretação.
@@ -23,5 +24,6 @@ Entidades nomeadas e numéricas; escape de `<`, `>` e `&`; espaços não separá
 
 1. Abra a pasta deste exercício.
 2. Abra o arquivo `index.html` em um navegador moderno.
+
 
 > Este exercício faz parte da coleção **70 exercícios práticos — HTML5 + CSS3**, desenvolvida para estudo e evolução em desenvolvimento web.
