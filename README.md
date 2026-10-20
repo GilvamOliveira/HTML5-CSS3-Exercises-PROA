@@ -4,6 +4,8 @@ Coleção progressiva de exercícios de front-end desenvolvida para praticar a e
 
 Esta versão amplia a coleção original de **30 exercícios** com mais **40 atividades**, totalizando **70 exercícios completos** no mesmo padrão de organização.
 
+Cada atividade inclui uma barra de navegação com os botões **Anterior** e **Próximo** e um seletor para pular diretamente para qualquer um dos **70 exercícios**.
+
 ## Demonstração online
 
 Todos os exercícios podem ser visualizados diretamente no navegador:
@@ -12,7 +14,7 @@ Todos os exercícios podem ser visualizados diretamente no navegador:
 
 ## Demonstração em vídeo
 
-![Demonstração do projeto: índice, galeria, formulário de cadastro e projetos finais](img/demo.gif)
+![Demonstração do projeto: índice, navegação entre exercícios, galeria, formulário de cadastro e projetos finais](img/demo.gif)
 
 ## Tecnologias
 
