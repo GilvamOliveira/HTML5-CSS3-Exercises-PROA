@@ -10,6 +10,12 @@ Todos os exercícios podem ser visualizados diretamente no navegador:
 
 - **[Acesse o projeto online](https://gilvamoliveira.github.io/HTML5-CSS3-Exercises-PROA/)**
 
+## Demonstração em vídeo
+
+![Demonstração do projeto: índice, galeria, formulário de cadastro e projetos finais](img/demo.gif)
+
+[Assistir ao vídeo em MP4](img/demo.mp4)
+
 ## Tecnologias
 
 - HTML5
@@ -37,35 +43,35 @@ Os exercícios estão distribuídos em onze níveis, sendo o último o projeto i
 | Nº  | Exercício | Nível |
 | --- | --------- | ----- |
 | 01 | [Minha primeira página HTML](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/01-primeira-pagina/index.html) | 1 — Primeiros passos |
-| 02 | [Conhecendo os títulos HTML](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/02-titulos/titulos.html) | 1 — Primeiros passos |
-| 03 | [Construindo uma página com parágrafos](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/03-paragrafos/paragrafos.html) | 1 — Primeiros passos |
-| 04 | [Formatando textos](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/04-formatacao/formatacao.html) | 1 — Primeiros passos |
-| 05 | [Frases e citações famosas](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/05-citacoes/citacoes.html) | 1 — Primeiros passos |
-| 06 | [Comentários para organizar o código](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/06-comentarios/comentarios.html) | 1 — Primeiros passos |
-| 07 | [Trabalhando com atributos HTML](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/07-atributos/atributos.html) | 1 — Primeiros passos |
-| 08 | [Minha página de links favoritos](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/08-links/links.html) | 2 — Links e imagens |
-| 09 | [Galeria de imagens](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/09-galeria/galeria.html) | 2 — Links e imagens |
+| 02 | [Conhecendo os títulos HTML](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/02-titulos/index.html) | 1 — Primeiros passos |
+| 03 | [Construindo uma página com parágrafos](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/03-paragrafos/index.html) | 1 — Primeiros passos |
+| 04 | [Formatando textos](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/04-formatacao/index.html) | 1 — Primeiros passos |
+| 05 | [Frases e citações famosas](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/05-citacoes/index.html) | 1 — Primeiros passos |
+| 06 | [Comentários para organizar o código](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/06-comentarios/index.html) | 1 — Primeiros passos |
+| 07 | [Trabalhando com atributos HTML](N%C3%ADvel%201%20%E2%80%94%20Primeiros%20passos%20com%20HTML/07-atributos/index.html) | 1 — Primeiros passos |
+| 08 | [Minha página de links favoritos](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/08-links/index.html) | 2 — Links e imagens |
+| 09 | [Galeria de imagens](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/09-galeria/index.html) | 2 — Links e imagens |
 | 10 | [Criando um miniportfólio](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/10-portfolio/index.html) | 2 — Links e imagens |
 | 11 | [Navegação entre páginas](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/11-navegacao/index.html) | 2 — Links e imagens |
 | 12 | [Favicon e título personalizado](N%C3%ADvel%202%20%E2%80%94%20Links,%20imagens%20e%20navega%C3%A7%C3%A3o/12-favicon-titulo/index.html) | 2 — Links e imagens |
-| 13 | [Lista de compras inteligente](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/13-listas/listas.html) | 3 — Organização |
-| 14 | [Grade curricular em tabela](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/14-grade-curricular/grade.html) | 3 — Organização |
-| 15 | [Tabela de produtos](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/15-tabela-produtos/produtos.html) | 3 — Organização |
-| 16 | [Entendendo Block e Inline](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/16-block-inline/block-inline.html) | 3 — Organização |
-| 17 | [Organizando a página com DIV](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/17-div-organizacao/divs.html) | 3 — Organização |
-| 18 | [Classes reutilizáveis](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/18-classes/classes.html) | 3 — Organização |
-| 19 | [Identificando elementos com ID](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/19-id/id.html) | 3 — Organização |
-| 20 | [Página com botões](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/20-botoes/botoes.html) | 3 — Organização |
-| 21 | [Incorporando conteúdo externo](N%C3%ADvel%204%20%E2%80%94%20Recursos%20complementares%20do%20HTML/21-iframe/iframe.html) | 4 — Recursos do HTML |
-| 22 | [Primeiro contato com JavaScript](N%C3%ADvel%204%20%E2%80%94%20Recursos%20complementares%20do%20HTML/22-javascript/javascript.html) | 4 — Recursos do HTML |
+| 13 | [Lista de compras inteligente](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/13-listas/index.html) | 3 — Organização |
+| 14 | [Grade curricular em tabela](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/14-grade-curricular/index.html) | 3 — Organização |
+| 15 | [Tabela de produtos](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/15-tabela-produtos/index.html) | 3 — Organização |
+| 16 | [Entendendo Block e Inline](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/16-block-inline/index.html) | 3 — Organização |
+| 17 | [Organizando a página com DIV](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/17-div-organizacao/index.html) | 3 — Organização |
+| 18 | [Classes reutilizáveis](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/18-classes/index.html) | 3 — Organização |
+| 19 | [Identificando elementos com ID](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/19-id/index.html) | 3 — Organização |
+| 20 | [Página com botões](N%C3%ADvel%203%20%E2%80%94%20Organiza%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es/20-botoes/index.html) | 3 — Organização |
+| 21 | [Incorporando conteúdo externo](N%C3%ADvel%204%20%E2%80%94%20Recursos%20complementares%20do%20HTML/21-iframe/index.html) | 4 — Recursos do HTML |
+| 22 | [Primeiro contato com JavaScript](N%C3%ADvel%204%20%E2%80%94%20Recursos%20complementares%20do%20HTML/22-javascript/index.html) | 4 — Recursos do HTML |
 | 23 | [Minha primeira estilização com CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/23-primeira-css/index.html) | 5 — Introdução ao CSS |
 | 24 | [Praticando a sintaxe do CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/24-sintaxe-css/index.html) | 5 — Introdução ao CSS |
 | 25 | [Laboratório de seletores CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/25-seletores-css/index.html) | 5 — Introdução ao CSS |
-| 26 | [Caça aos erros de CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/26-erros-css/pagina.html) | 5 — Introdução ao CSS |
-| 27 | [Laboratório de cores](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/27-cores/cores.html) | 5 — Introdução ao CSS |
-| 28 | [Construindo fundos com CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/28-backgrounds/backgrounds.html) | 5 — Introdução ao CSS |
-| 29 | [Cartões com bordas, margens e padding](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/29-cards/cards.html) | 5 — Introdução ao CSS |
-| 30 | [Projeto integrador — Meu primeiro site](Projeto-Final/index.html) | Projeto final |
+| 26 | [Caça aos erros de CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/26-erros-css/index.html) | 5 — Introdução ao CSS |
+| 27 | [Laboratório de cores](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/27-cores/index.html) | 5 — Introdução ao CSS |
+| 28 | [Construindo fundos com CSS](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/28-backgrounds/index.html) | 5 — Introdução ao CSS |
+| 29 | [Cartões com bordas, margens e padding](N%C3%ADvel%205%20%E2%80%94%20Introdu%C3%A7%C3%A3o%20ao%20CSS/29-cards/index.html) | 5 — Introdução ao CSS |
+| 30 | [Projeto final — ONG Verde Vida](Projeto-Final/index.html) | Projeto final |
 | 31 | [Laboratório de botões](N%C3%ADvel%206%20%E2%80%94%20Recursos%20e%20estrutura%20do%20documento/31-laboratorio-botoes/index.html) | 6 — Recursos e estrutura |
 | 32 | [Incorporando conteúdo com iframe](N%C3%ADvel%206%20%E2%80%94%20Recursos%20e%20estrutura%20do%20documento/32-iframe-conteudo-externo/index.html) | 6 — Recursos e estrutura |
 | 33 | [HTML encontrando JavaScript](N%C3%ADvel%206%20%E2%80%94%20Recursos%20e%20estrutura%20do%20documento/33-html-javascript/index.html) | 6 — Recursos e estrutura |
