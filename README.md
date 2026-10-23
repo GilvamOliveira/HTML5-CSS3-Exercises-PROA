@@ -2,6 +2,8 @@
 
 Coleção progressiva de exercícios de front-end desenvolvida para praticar a estruturação de páginas com HTML5 e sua estilização com CSS3. O repositório percorre conceitos fundamentais, navegação, organização de informações, recursos complementares, semântica, formulários, CSS intermediário e projetos integradores.
 
+[![Validate exercises](https://github.com/GilvamOliveira/HTML5-CSS3-Exercises-PROA/actions/workflows/validate.yml/badge.svg)](https://github.com/GilvamOliveira/HTML5-CSS3-Exercises-PROA/actions/workflows/validate.yml)
+
 Esta versão amplia a coleção original de **30 exercícios** com mais **40 atividades**, totalizando **70 exercícios completos** no mesmo padrão de organização.
 
 Cada atividade inclui uma barra de navegação com os botões **Anterior**, **Próximo** e **Índice**, além de um seletor para pular diretamente para qualquer um dos **70 exercícios**.
