@@ -156,3 +156,7 @@ A verificação confere links e recursos locais, estrutura da navegação, metad
 ---
 
 Material de estudo para portfólio e prática contínua em desenvolvimento web.
+
+---
+
+Autor: Gilvam Oliveira · [LinkedIn](https://www.linkedin.com/in/gilvam-oliveira/) · [GitHub](https://github.com/GilvamOliveira)
